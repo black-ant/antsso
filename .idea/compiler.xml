@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com-gang-antsso-common-lib" />
+        <module name="com-gang-antsso-common-server" />
+        <module name="com-gang-antsso-ext-easy" />
         <module name="com-gang-antsso-ext-oauth" />
+        <module name="com-gang-antsso-common-lib" />
       </profile>
     </annotationProcessing>
   </component>
