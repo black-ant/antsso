@@ -13,4 +13,12 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com-gang-antsso-common-lib" options="-parameters" />
+      <module name="com-gang-antsso-common-server" options="-parameters" />
+      <module name="com-gang-antsso-ext-easy" options="-parameters" />
+      <module name="com-gang-antsso-ext-oauth" options="-parameters" />
+    </option>
+  </component>
 </project>

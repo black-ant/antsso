@@ -1,4 +1,4 @@
-package com.gang.antsso.common.server;
+package com.gang.antsso.common.controller;
 
 import com.gang.antsso.common.lib.to.AuthInfo;
 import com.gang.antsso.common.lib.to.UserInfo;

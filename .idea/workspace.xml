@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181b602-0448-4f81-8ab5-62d867abdfbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/error/SSOErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/to/AuthBaseTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/to/AuthInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/to/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/type/AuthType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/AbstractAuthHandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/filter/OAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/easy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/AbstractAuthHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/controller/AbstractAuthHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/filter/OAuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,33 +28,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/error/SSOErrorCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-              <folding>
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1098#1099#0" expanded="true" />
-                <element signature="e#1129#1130#0" expanded="true" />
-                <element signature="e#1177#1178#0" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/to/AuthBaseTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -83,35 +46,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/filter/OAuthFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/easy/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="198">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/AbstractAuthHandle.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/controller/AbstractAuthHandle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="40" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="40" />
@@ -143,8 +90,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="484">
               <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -164,13 +125,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/common/lib/pom.xml" />
         <option value="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/error/SSOErrorCode.java" />
         <option value="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/to/AuthBaseTO.java" />
         <option value="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/type/AuthType.java" />
         <option value="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/AbstractAuthHandle.java" />
         <option value="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/controller/AbstractAuthHandle.java" />
       </list>
     </option>
   </component>
@@ -188,7 +150,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -198,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -222,40 +184,6 @@
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="antsso" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="to" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -290,95 +218,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antsso" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case/case 1.1 base" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -409,23 +270,26 @@
       <option name="presentableId" value="Default" />
       <updated>1574238433363</updated>
       <workItem from="1574238436246" duration="754000" />
-      <workItem from="1574342829555" duration="3630000" />
+      <workItem from="1574342829555" duration="3749000" />
+      <workItem from="1578637392230" duration="251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4384000" />
+    <option name="totallyTimeSpent" value="4754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info id="JRebel" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3458445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -437,7 +301,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32991204" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32991204" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -456,16 +320,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/type.java" />
     <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/error.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ext/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -479,9 +333,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server.java" />
+    <entry file="file://$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy.java" />
     <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/error/SSOErrorCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
+        <state relative-caret-position="814">
           <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
           <folding>
             <element signature="e#632#633#0" expanded="true" />
@@ -504,55 +360,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ext/easy/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/to/AuthBaseTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/type/AuthType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/filter/OAuthFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/easy/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/to/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -563,24 +377,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/AbstractAuthHandle.java">
+    <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/to/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="176">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/common/lib/type/AuthType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/logic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/filter/OAuthFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java">
+    <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/controller/AbstractAuthHandle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -646,7 +503,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>com-gang-antsso-common-lib</last-edited>
+          <last-edited>com-gang-antsso-common-server</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
