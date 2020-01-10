@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9181b602-0448-4f81-8ab5-62d867abdfbf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/AbstractAuthHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/controller/AbstractAuthHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/server/filter/OAuthFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9181b602-0448-4f81-8ab5-62d867abdfbf" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -60,7 +54,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/controller/AbstractAuthHandle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="242">
               <caret line="11" column="40" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -271,18 +265,18 @@
       <updated>1574238433363</updated>
       <workItem from="1574238436246" duration="754000" />
       <workItem from="1574342829555" duration="3749000" />
-      <workItem from="1578637392230" duration="251000" />
+      <workItem from="1578637392230" duration="549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4754000" />
+    <option name="totallyTimeSpent" value="5052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="JRebel" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3458445" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3458445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -301,7 +295,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32991204" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.18328446" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -434,7 +428,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/server/src/main/java/com/gang/antsso/common/controller/AbstractAuthHandle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="242">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
