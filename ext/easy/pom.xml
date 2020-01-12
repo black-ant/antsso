@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antsso-common-server</artifactId>
+            <artifactId>com-gang-antsso-server</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

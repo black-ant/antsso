@@ -1,0 +1,5 @@
+com\gang\antsso\oauth\config\WebSecurityConfig.class
+com\gang\antsso\oauth\OAuthUserDetailsService.class
+com\gang\antsso\oauth\config\ServletInitializer.class
+com\gang\antsso\oauth\to\OAuthUserDetails.class
+com\gang\antsso\oauth\AccessTokenRequestConverter.class

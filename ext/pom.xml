@@ -11,10 +11,14 @@
 
     <artifactId>com-gang-antsso-ext</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>oauth</module>
         <module>easy</module>
     </modules>
 
+    <dependencies>
+
+    </dependencies>
 
 </project>

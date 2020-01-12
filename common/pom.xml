@@ -13,8 +13,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>lib</module>
-        <module>server</module>
     </modules>
+
+
 
 
 </project>

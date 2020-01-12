@@ -18,7 +18,18 @@
     <modules>
         <module>common</module>
         <module>ext</module>
+        <module>server</module>
     </modules>
 
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.gang</groupId>
+                <artifactId>com-gang-common-parent-sdk</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
