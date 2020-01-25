@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/ext/oauth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../exp/common/cache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common/common-lib" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common/ext" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common/ext/dingtalk" charset="UTF-8" />
@@ -19,7 +20,6 @@
     <file url="file://$PROJECT_DIR$/../exp/common/ext/workwechat" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common/mybatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common/parent-sdk" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../exp/common/redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common/swagger" charset="UTF-8" />
   </component>
 </project>
