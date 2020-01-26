@@ -18,6 +18,7 @@
         <module name="com-gang-common-lib" />
         <module name="com-gang-sdk-api" />
         <module name="com-gang-ext-sdk-parent" />
+        <module name="com-gang-antsso-datacenter" />
         <module name="com-gang-common-swagger" />
         <module name="com-gang-common-redis" />
         <module name="com-gang-antsso-ext-easy" />
@@ -32,6 +33,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="com-gang-antsso-auth-api" options="-parameters" />
       <module name="com-gang-antsso-common-lib" options="-parameters" />
+      <module name="com-gang-antsso-datacenter" options="-parameters" />
       <module name="com-gang-antsso-ext-easy" options="-parameters" />
       <module name="com-gang-antsso-ext-oauth" options="-parameters" />
       <module name="com-gang-antsso-server" options="-parameters" />

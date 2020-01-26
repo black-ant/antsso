@@ -16,25 +16,19 @@
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-common-lib</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.gang</groupId>
-            <artifactId>com-gang-common-parent-sdk</artifactId>
-            <version>1.0.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-datacenter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- DAO -->
         <!--        Auth sdk-->
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-ext-oauth</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <!-- DAO -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
     </dependencies>

@@ -1,5 +1,9 @@
 package com.gang.antsso.oauth.config;
 
+import com.gang.antsso.oauth.OAuthFailureService;
+import com.gang.antsso.oauth.OAuthUserDetailsService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,10 +24,22 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    @Autowired
+    private OAuthUserDetailsService oAuthUserDetailsService;
+
+    @Autowired
+    private OAuthFailureService oAuthFailureService;
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
+
         //该方法用于用户认证，此处添加内存用户，并且指定了权限
+        logger.info("------> password :{} <-------", new BCryptPasswordEncoder().encode("123456"));
+        auth.userDetailsService(oAuthUserDetailsService).passwordEncoder(new BCryptPasswordEncoder());
+
         auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder())
                 .withUser("user").password(new BCryptPasswordEncoder().encode("123456")).roles("USER")
                 .and()
@@ -44,6 +60,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()                      //其它请求都需要校验才能访问
                 .and()
                 .formLogin()
+                .failureHandler(oAuthFailureService)
                 .loginPage("/login")                             //定义登录的页面"/login"，允许访问
                 .permitAll()
                 .and()

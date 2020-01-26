@@ -1,5 +1,6 @@
 package com.gang.antsso.oauth.to;
 
+import com.gang.antsso.auth.api.logic.OAuthUserInfo;
 import com.gang.antsso.lib.to.AbstractUserDetails;
 import com.gang.antsso.lib.to.UserInfo;
 import com.gang.antsso.lib.to.UserRoles;
@@ -39,7 +40,6 @@ public class OAuthUserDetails extends AbstractUserDetails<GrantedAuthority> impl
         this.rolesList = changeRoles(authRoles);
     }
 
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
@@ -47,32 +47,32 @@ public class OAuthUserDetails extends AbstractUserDetails<GrantedAuthority> impl
 
     @Override
     public String getPassword() {
-        return null;
+        return password;
     }
 
     @Override
     public String getUsername() {
-        return null;
+        return username;
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
 
     @Override
@@ -86,4 +86,5 @@ public class OAuthUserDetails extends AbstractUserDetails<GrantedAuthority> impl
 
         return list;
     }
+
 }

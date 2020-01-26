@@ -1,7 +1,14 @@
 package com.gang.antsso.oauth;
 
+import com.alibaba.fastjson.JSONObject;
+import com.gang.antsso.auth.api.entity.UserInfoSearch;
+import com.gang.antsso.auth.api.logic.OAuthUserInfo;
 import com.gang.antsso.lib.to.UserInfo;
 import com.gang.antsso.oauth.to.OAuthUserDetails;
+import com.gang.common.lib.utils.ReflectionUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,20 +29,12 @@ import java.util.Set;
  * @Created by zengzg
  */
 @Component
-public class OAuthUserDetailsService implements UserDetailsService {
+public class OAuthUserDetailsService implements UserDetailsService, OAuthUserInfo {
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    //@Autowired  //业务服务类
-    //private UserService userService;
-
-    private final static Set<UserInfo> users = new HashSet<>();
-
-    static {
-        users.add(new UserInfo("1", "test-user1", "123456"));
-        users.add(new UserInfo("2", "test-user2", "123456"));
-        users.add(new UserInfo("3", "test-user3", "123456"));
-        users.add(new UserInfo("4", "test-user4", "123456"));
-    }
+    @Autowired
+    private ReflectionUtils reflectionUtils;
 
     /**
      * spring会将MyUserDetails中的密码与session中的密码比较，否是验证通过
@@ -50,23 +49,36 @@ public class OAuthUserDetailsService implements UserDetailsService {
         //}
 
         //grantedAuthorities对应数据库中权限的表
+        UserInfo userInfo = getUserInfo(new UserInfoSearch(userName));
+
         ArrayList<GrantedAuthority> authRoles = new ArrayList<GrantedAuthority>();
         authRoles.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
         authRoles.add(new SimpleGrantedAuthority("ROLE_USER"));
 
 
-        Optional<UserInfo> user = users.stream()
-                .filter((u) -> u.getUsername().equals(userName))
-                .findFirst();
-
-        if (user.isPresent()) {
-            return new OAuthUserDetails(user.get(), authRoles);
+        if (null != userInfo) {
+            logger.info("------> this is userInfo :{} <-------", JSONObject.toJSONString(userInfo));
+            return new OAuthUserDetails(userInfo, authRoles);
         } else {
             throw new UsernameNotFoundException("there's no user founded!");
         }
-
-
     }
 
 
+    @Override
+    public UserInfo getUserInfo(UserInfoSearch userInfoSearch) {
+        try {
+
+            userInfoSearch.setLogicClass("com.gang.antsso.easy.DataBaseLogic");
+
+            OAuthUserInfo oAuthUserInfo = reflectionUtils.springClassLoad(userInfoSearch.getLogicClass());
+
+            return oAuthUserInfo.getUserInfo(userInfoSearch);
+
+        } catch (Exception e) {
+            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
+        }
+        return null;
+
+    }
 }

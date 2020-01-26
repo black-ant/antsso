@@ -2,7 +2,6 @@ package com.gang.antsso;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ImportResource;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
@@ -11,7 +10,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Date 2020/1/11 15:14
  * @Created by zengzg
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.gang")
 @EnableSwagger2
 public class AntSsoApplication {
 

@@ -19,6 +19,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-datacenter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
@@ -28,9 +33,18 @@
             <version>2.4.0.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-auth-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- Common Oauth -->
+        <dependency>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-ext-easy</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 </project>

@@ -1,9 +1,7 @@
 package com.gang.antsso.controller;
 
-import com.gang.antsso.dao.SsoRoleRepository;
-import com.gang.antsso.dao.UserRepository;
-import com.gang.antsso.entity.SsoRoleEntity;
-import com.gang.antsso.entity.SsoUserEntity;
+import com.gang.antsso.datacenter.entity.SsoRoleEntity;
+import com.gang.antsso.datacenter.repository.SsoRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;

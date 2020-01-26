@@ -10,13 +10,7 @@ import java.util.List;
  * @Created by zengzg
  */
 
-public abstract class AbstractUserDetails<T> {
-
-    public String userid;
-    public String username;
-
-    public String password;
-    public String token;
+public abstract class AbstractUserDetails<T> extends UserInfo {
 
     public List<UserRoles> rolesList;
 

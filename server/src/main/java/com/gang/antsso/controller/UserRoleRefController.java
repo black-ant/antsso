@@ -1,7 +1,7 @@
 package com.gang.antsso.controller;
 
-import com.gang.antsso.dao.UserRoleRefRepository;
-import com.gang.antsso.entity.UserRoleRefEntity;
+import com.gang.antsso.datacenter.entity.UserRoleRefEntity;
+import com.gang.antsso.datacenter.repository.UserRoleRefRepository;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

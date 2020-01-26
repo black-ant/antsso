@@ -1,7 +1,6 @@
 package com.gang.antsso.controller;
 
-import com.gang.antsso.entity.AbstractEntity;
-import com.gang.antsso.entity.SsoConfigEntity;
+import com.gang.antsso.datacenter.entity.AbstractEntity;
 import com.gang.common.lib.to.ResponseModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.GetMapping;

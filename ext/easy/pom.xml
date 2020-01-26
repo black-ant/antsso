@@ -11,11 +11,17 @@
 
     <artifactId>com-gang-antsso-ext-easy</artifactId>
     <dependencies>
+
         <dependency>
             <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antsso-server</artifactId>
+            <artifactId>com-gang-antsso-datacenter</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-auth-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

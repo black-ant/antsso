@@ -1,0 +1,9 @@
+com\gang\antsso\datacenter\repository\UserRepository.class
+com\gang\antsso\datacenter\entity\SsoConfigEntity.class
+com\gang\antsso\datacenter\repository\SsoRoleRepository.class
+com\gang\antsso\datacenter\repository\UserRoleRefRepository.class
+com\gang\antsso\datacenter\entity\AbstractEntity.class
+com\gang\antsso\datacenter\entity\UserRoleRefEntity.class
+com\gang\antsso\datacenter\entity\SsoUserEntity.class
+com\gang\antsso\datacenter\repository\SsoConfigRepository.class
+com\gang\antsso\datacenter\entity\SsoRoleEntity.class

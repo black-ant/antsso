@@ -11,11 +11,11 @@ import lombok.Data;
 @Data
 public class UserInfo {
 
-    private String userid;
-    private String username;
+    protected String userid;
+    protected String username;
 
-    private String password;
-    private String token;
+    protected String password;
+    protected String token;
 
     public UserInfo() {
     }
