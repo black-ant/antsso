@@ -55,6 +55,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers("/index").permitAll()
                 .regexMatchers(".*sign.*").permitAll()
+                .regexMatchers(".*unauth.*").permitAll()
                 .antMatchers("/admin").hasRole("ADMIN")
                 .antMatchers("/admin2").hasAnyRole("ADMIN", "USER")
                 .anyRequest().authenticated()                      //其它请求都需要校验才能访问

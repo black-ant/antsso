@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181b602-0448-4f81-8ab5-62d867abdfbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/entity/UserInfoSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/logic/OAuthUserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datacenter/com-gang-antsso-datacenter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datacenter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datacenter/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/DataBaseLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthFailureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoAppSettingEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoAppTypeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/UserAppRefEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoAppSettingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoAppTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/UserAppRefRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ext/workwechat/com-gang-antisso-ext-workwechat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ext/workwechat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ext/workwechat/src/main/java/com/gang/antsso/workwechat/WechatOAuthLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/CallBackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/LoginInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoAppSettingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoAppTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoUserAppRefController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UnAuthTestContoller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/templates/oauth/workwechatlogin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/templates/test.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../exp/common/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_2_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../exp/common/.idea/libraries/Maven__io_netty_netty_buffer_4_1_29_Final.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../exp/common/.idea/libraries/Maven__io_netty_netty_codec_4_1_29_Final.xml" afterDir="false" />
@@ -26,68 +37,24 @@
       <change afterPath="$PROJECT_DIR$/../exp/common/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_2_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../exp/common/redis/com-gang-common-redis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c583d37-00ca-4e4d-a08d-92e36ce53627.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1c583d37-00ca-4e4d-a08d-92e36ce53627.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antsso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/antsso.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/AbstractUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/AbstractUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/AbstractUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/AbstractUserDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/UserInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/lib/target/com-gang-antsso-common-lib-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/target/com-gang-antsso-common-lib-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/src/main/java/com/gang/antsso/auth/api/AuthAPIApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/AuthAPIApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/auth-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/auth-api/src/test/java/com/gang/antsso/auth/api/AuthAPIApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/target/com-gang-antsso-datacenter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/com-gang-antsso-datacenter-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/easy/target/com-gang-antsso-ext-easy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/target/com-gang-antsso-ext-easy-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/oauth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/to/OAuthUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/to/OAuthUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/oauth/target/classes/com/gang/antsso/oauth/OAuthUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/target/classes/com/gang/antsso/oauth/OAuthUserDetailsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/oauth/target/classes/com/gang/antsso/oauth/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/target/classes/com/gang/antsso/oauth/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/oauth/target/classes/com/gang/antsso/oauth/to/OAuthUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/target/classes/com/gang/antsso/oauth/to/OAuthUserDetails.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/oauth/target/com-gang-antsso-ext-oauth-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/target/com-gang-antsso-ext-oauth-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/com-gang-antsso-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/com-gang-antsso-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/AntSsoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/AntSsoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/AbstratController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/AbstratController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserRoleRefController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserRoleRefController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/dao/SsoConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoConfigRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/dao/SsoRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoRoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/dao/UserRoleRefRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/UserRoleRefRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/SsoConfigEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoConfigEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/SsoRoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoRoleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/SsoUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoUserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/UserRoleRefEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/UserRoleRefEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/AntSsoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/AntSsoApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/AbstratController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/AbstratController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/SsoConfigController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/SsoConfigController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/SsoRoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/SsoRoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/dao/SsoConfigRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/dao/SsoRoleRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/dao/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/entity/AbstractEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/entity/SsoConfigEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/entity/SsoRoleEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/entity/SsoUserEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/entity/UserRoleRefEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/oauth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/oauth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ext/oauth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoConfigController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/SsoConfigController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/com-gang-antsso-server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/com-gang-antsso-server-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -167,6 +134,7 @@
     <ignored path="$PROJECT_DIR$/../exp/common/cache/target/" />
     <ignored path="$PROJECT_DIR$/datacenter/target/" />
     <ignored path="$PROJECT_DIR$/common/auth-api/target/" />
+    <ignored path="$PROJECT_DIR$/ext/workwechat/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,74 +182,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UnAuthTestContoller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/to/OAuthUserDetails.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/oauth/workwechatlogin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-              <folding>
-                <element signature="e#1391#1392#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-                <element signature="e#1502#1503#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="326">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/AbstractUserDetails.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/LoginInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/ServletInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthUserDetailsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
-              <folding>
-                <element signature="e#1742#1760#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/logic/OAuthUserInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="194">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -290,19 +216,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoUserAppRefController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthFailureService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="311">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -311,15 +228,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/WebSecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+            <state relative-caret-position="264">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/CallBackController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -327,6 +267,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -338,7 +279,11 @@
       <find>com-gang-antsso-common-lib</find>
       <find>springClassLoad</find>
       <find>OAuthUserDetails</find>
+      <find>SsoAppSettingEntity</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\java\workspace\git\antsso</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -346,27 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/AuthLogic.java" />
-        <option value="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserDetails.java" />
-        <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/to/OAuthUserDetailsTO.java" />
-        <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthUserDetails.java" />
-        <option value="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserRoles.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/MyMvcConfig.java" />
-        <option value="$PROJECT_DIR$/server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/../exp/common/cache/src/main/java/com/gang/common/cache/CacheApplication.java" />
-        <option value="$PROJECT_DIR$/../exp/common/cache/pom.xml" />
-        <option value="$PROJECT_DIR$/../exp/common/cache/src/main/java/com/gang/common/cache/utils/RedisInvoke.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/dao/SsoRoleRepository.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/dao/SsoConfigRepository.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/dao/UserRepository.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/SsoConfigEntity.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/SsoRoleEntity.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/SsoUserEntity.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/dao/UserRoleRefRepository.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/entity/UserRoleRefEntity.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoRoleEntity.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/UserRoleRefRepository.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoRoleRepository.java" />
         <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoConfigRepository.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -383,7 +307,6 @@
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/AbstratController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoRoleController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserRoleRefController.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoConfigController.java" />
         <option value="$PROJECT_DIR$/ext/oauth/pom.xml" />
         <option value="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/AbstractUserDetails.java" />
         <option value="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/entity/UserInfoSearch.java" />
@@ -395,8 +318,30 @@
         <option value="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/DataBaseLogic.java" />
         <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthUserDetailsService.java" />
         <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthFailureService.java" />
-        <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/to/OAuthUserDetails.java" />
+        <option value="$PROJECT_DIR$/ext/workwechat/pom.xml" />
+        <option value="$PROJECT_DIR$/ext/workwechat/src/main/java/com/gang/antsso/workwechat/WechatOAuthLogic.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoAppTypeEntity.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/UserAppRefEntity.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoConfigController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SspUserAppRefController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoSettingController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoAppTypeController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoUserAppRefController.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoAppTypeRepository.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/UserAppRefRepository.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoAppSettingController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/CallBackController.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoAppSettingRepository.java" />
+        <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/Test.html" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoAppSettingEntity.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UnAuthTestContoller.java" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/test.html" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/LoginInfoController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/oauth/workwechatlogin.html" />
       </list>
     </option>
   </component>
@@ -444,7 +389,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -456,69 +400,25 @@
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -526,108 +426,116 @@
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="to" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
-              <item name="oauth" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="antsso" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security:spring-security-core:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security:spring-security-core:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-core-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.security:spring-security-core:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-security-core-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="userdetails" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="workwechat" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -643,12 +551,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/datacenter/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3994778" />
     <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin.scripting" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\workspace\git\antsso\common" />
+      <recent name="D:\java\workspace\git\antsso" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.gang.antsso.datacenter.entity" />
+      <recent name="" />
+      <recent name="com.gang.antsso.entity" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.gang.antsso.oauth" />
     </key>
@@ -658,14 +576,6 @@
       <recent name="D:\java\workspace\git\antsso\server\src\main\resources\static\css" />
       <recent name="D:\java\workspace\git\antsso\server\src\main\resources\templates" />
       <recent name="D:\java\workspace\git\antsso\ext\oauth\src\main\java\com\gang\antsso\oauth\config" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="com.gang.antsso.entity" />
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\workspace\git\antsso\common" />
-      <recent name="D:\java\workspace\git\antsso" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -732,31 +642,32 @@
       <workItem from="1579146319839" duration="120000" />
       <workItem from="1579146487345" duration="1791000" />
       <workItem from="1579934767487" duration="10207000" />
-      <workItem from="1580025158263" duration="17866000" />
+      <workItem from="1580025158263" duration="18071000" />
+      <workItem from="1580109249738" duration="14911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67076000" />
+    <option name="totallyTimeSpent" value="82192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8941718" visible="true" weight="0.32908848" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6395112" visible="true" weight="0.33378017" />
+      <window_info id="Structure" order="1" sideWeight="0.3604888" side_tool="true" weight="0.33378017" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50431037" side_tool="true" weight="0.3505362" />
+      <window_info id="Favorites" order="6" sideWeight="0.3604888" side_tool="true" weight="0.33378017" />
       <window_info id="JRebel" order="7" sideWeight="0.19171779" side_tool="true" weight="0.3505362" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info id="Persistence" order="9" sideWeight="0.10631741" side_tool="true" weight="0.32908848" />
+      <window_info id="Web" order="8" sideWeight="0.3604888" side_tool="true" weight="0.33378017" />
+      <window_info id="Persistence" order="9" sideWeight="0.3604888" side_tool="true" weight="0.33378017" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.80498534" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.071847506" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04398827" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.071847506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -770,14 +681,14 @@
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32991204" />
       <window_info anchor="bottom" id="Problems" order="15" weight="0.5762463" />
       <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.32991204" />
-      <window_info anchor="bottom" id="JRebel Executor" order="17" sideWeight="0.49932975" weight="0.24780059" />
-      <window_info anchor="bottom" id="Messages" order="18" weight="0.5" />
+      <window_info anchor="bottom" id="JRebel Executor" order="17" sideWeight="0.49932975" visible="true" weight="0.2228739" />
+      <window_info anchor="bottom" id="Messages" order="18" weight="0.78299123" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.03753351" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.03686327" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.3652815" />
@@ -830,278 +741,57 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoRoleEntity.java">
+    <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="242">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/AbstractEntity.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="550">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/ServletInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="54" />
+        <state relative-caret-position="550">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="242">
+          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/UserLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/AccessTokenRequestConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/DataCenterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/exception/SsoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="33" column="21" selection-start-line="22" selection-start-column="5" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/AuthAPIApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" selection-start-line="14" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/lib/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../resource/repo/com/gang/antsso/com-gang-antsso-auth-api/0.0.1-SNAPSHOT/com-gang-antsso-auth-api-0.0.1-SNAPSHOT.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/auth-api/pom.xml">
+    <entry file="file://$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/logic/OAuthUserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/data/spring-data-commons/2.1.9.RELEASE/spring-data-commons-2.1.9.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="19" column="15" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserRoleRefController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" selection-end-line="17" />
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoConfigController.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="440">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthFailureService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/AbstratController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="22" column="60" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/oauth/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/Logic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="638" column="18" selection-start-line="638" selection-start-column="18" selection-end-line="638" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/easy/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../exp/common/common-lib/src/main/java/com/gang/common/lib/utils/ReflectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="45" selection-start-line="45" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/AntSsoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="183" column="103" selection-start-line="183" selection-start-column="103" selection-end-line="183" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/data/spring-data-jpa/2.1.9.RELEASE/spring-data-jpa-2.1.9.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/entity/UserInfoSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1113,122 +803,340 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/DataBaseLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="165" column="26" lean-forward="true" selection-start-line="165" selection-start-column="26" selection-end-line="165" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/ServletInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/logic/OAuthUserInfo.java">
+    <entry file="file://$PROJECT_DIR$/../exp/common/ext/workwechat/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/easy/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="20" selection-start-line="20" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/workwechat/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/workwechat/src/main/java/com/gang/antsso/workwechat/WechatOAuthLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoConfigEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoRoleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoConfigRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" column="84" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoRoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoSettingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/AbstratController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoAppTypeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/UserAppRefRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/AntSsoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/UserAppRefEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="514" column="34" selection-start-line="514" selection-start-column="34" selection-end-line="514" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="319" column="35" selection-start-line="319" selection-start-column="35" selection-end-line="319" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoAppTypeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoAppTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoAppSettingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="18" column="96" selection-start-line="18" selection-start-column="96" selection-end-line="18" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/data/spring-data-jpa/2.1.9.RELEASE/spring-data-jpa-2.1.9.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="181">
+          <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserInfo.java">
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoAppSettingRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/AbstractUserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
-          <folding>
-            <element signature="e#1742#1760#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthFailureService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="321">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/DataBaseLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="52" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="219" column="6" lean-forward="true" selection-start-line="219" selection-start-column="6" selection-end-line="219" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+        <state relative-caret-position="367">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/to/OAuthUserDetails.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        <state relative-caret-position="191">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UserRoleRefController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/logout.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoAppSettingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/CallBackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/LoginInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/SsoUserAppRefController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exp/common/ext/workwechat/src/test/java/com/gang/ext/sdk/workwechat/OrgTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="69" column="78" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="28" lean-forward="true" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/UnAuthTestContoller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/oauth/workwechatlogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1293,7 +1201,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>com-gang-common-cache</last-edited>
+          <last-edited>antsso</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

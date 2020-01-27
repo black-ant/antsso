@@ -5,8 +5,10 @@ D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\advice\Control
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\OrderController.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\UserController.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\logic\UserLogic.java
-D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\SsoConfigController.java
+D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\SsoAppSettingController.java
+D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\SsoAppTypeController.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\exception\SsoException.java
+D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\SsoUserAppRefController.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\UserRoleRefController.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\advice\DaoAdvice.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\config\WebMvcConfig.java

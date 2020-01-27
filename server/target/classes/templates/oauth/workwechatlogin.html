@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Insert title here</title>
+    <link th:href="@{/css/common.css}" rel="stylesheet">
+    <script src="http://rescdn.qqmail.com/node/ww/wwopenmng/js/sso/wwLogin-1.0.0.js"></script>
+</head>
+<body>
+<div id="work_wechat" class="index method_c">
+
+</div>
+<script>
+
+    console.log("this is in");
+
+    window.WwLogin({
+        "id": "work_wechat",
+        "appid": "ww72f872df46c2b36f",
+        "agentid": "1000002",
+        "redirect_uri": "127.0.0.1:8089/unauth/test",
+        "state": "",
+        "href": "",
+    });
+
+    console.log("this is out");
+</script>
+</body>
+</html>
+</html>
