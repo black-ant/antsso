@@ -33,7 +33,7 @@ public class LoginInfoController {
         logger.info("------> this is in unauth <-------");
         ModelAndView modelAndView = new ModelAndView();
 
-        modelAndView.setViewName("/oauth/workwechatlogin");
+        modelAndView.setViewName("/auth/workwechatlogin");
 
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", "gang");

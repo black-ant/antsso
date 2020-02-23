@@ -11,5 +11,5 @@ import com.gang.antsso.lib.to.UserInfo;
  */
 public interface OAuthUserInfo {
 
-    public abstract UserInfo getUserInfo(UserInfoSearch userInfoSearch);
+    UserInfo getUserInfo(UserInfoSearch userInfoSearch);
 }

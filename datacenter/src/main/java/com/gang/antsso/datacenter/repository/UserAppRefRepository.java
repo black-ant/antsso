@@ -13,3 +13,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserAppRefRepository extends JpaRepository<UserAppRefEntity, String> {
 }
+

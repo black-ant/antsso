@@ -23,6 +23,9 @@ public class UserInfoSearch {
     // Logic Class
     private String logicClass;
 
+    // Seach Info
+    private SearchItem searchItem;
+
     public UserInfoSearch() {
     }
 

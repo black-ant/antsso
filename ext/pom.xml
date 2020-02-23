@@ -16,6 +16,8 @@
         <module>oauth</module>
         <module>easy</module>
         <module>workwechat</module>
+        <module>opt</module>
+        <module>faceoauth</module>
     </modules>
 
     <dependencies>
