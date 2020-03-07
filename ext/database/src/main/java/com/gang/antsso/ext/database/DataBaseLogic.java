@@ -4,7 +4,7 @@ import com.gang.antsso.auth.api.entity.UserInfoSearch;
 import com.gang.antsso.auth.api.logic.OAuthUserInfo;
 import com.gang.antsso.datacenter.entity.SsoUserEntity;
 import com.gang.antsso.datacenter.repository.UserRepository;
-import com.gang.antsso.lib.to.UserInfo;
+import com.gang.antsso.auth.api.to.UserInfo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,15 +16,15 @@ import org.springframework.stereotype.Component;
  * @Created by zengzg
  */
 @Component
-public class DataBaseLogic implements OAuthUserInfo {
+public class DataBaseLogic implements OAuthUserInfo<String> {
 
     @Autowired
     private UserRepository userRepository;
 
     @Override
-    public UserInfo getUserInfo(UserInfoSearch userInfoSearch) {
+    public UserInfo getUserInfo(UserInfoSearch<String> userInfoSearch) {
 
-        SsoUserEntity ssoUserEntity = userRepository.findById(userInfoSearch.getPrimaryKey()).get();
+        SsoUserEntity ssoUserEntity = userRepository.findById(userInfoSearch.getSearchInfo()).get();
 
         UserInfo userInfo = new UserInfo();
 

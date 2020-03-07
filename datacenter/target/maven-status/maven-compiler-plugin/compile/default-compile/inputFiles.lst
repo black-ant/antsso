@@ -1,7 +1,9 @@
+D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\repository\SsoClientRepository.java
 D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\entity\UserRoleRefEntity.java
 D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\repository\SsoAppSettingRepository.java
 D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\entity\AbstractEntity.java
 D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\repository\SsoAppTypeRepository.java
+D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\entity\SsoClientEntity.java
 D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\entity\SsoRoleEntity.java
 D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\repository\UserAppRefRepository.java
 D:\java\workspace\git\antsso\datacenter\src\main\java\com\gang\antsso\datacenter\entity\SsoAppTypeEntity.java

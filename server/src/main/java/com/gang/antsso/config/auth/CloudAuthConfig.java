@@ -1,5 +1,6 @@
 package com.gang.antsso.config.auth;
 
+import com.gang.antsso.logic.OAuthClientDetailsService;
 import com.gang.antsso.logic.OAuthUserDetailsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,6 +34,9 @@ public class CloudAuthConfig extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private OAuthUserDetailsService userService;
 
+    @Autowired
+    private OAuthClientDetailsService clientDetailsService;
+
     /**
      * 使用密码模式需要配置
      */
@@ -46,13 +50,7 @@ public class CloudAuthConfig extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         logger.info("------> this is create CloudAuthConfig  ClientDetailsServiceConfigurer<-------");
-        clients.inMemory()
-                .withClient("admin")//配置client_id
-                .secret(passwordEncoder.encode("admin123456"))//配置client-secret
-                .accessTokenValiditySeconds(3600)//配置访问token的有效期
-                .refreshTokenValiditySeconds(864000)//配置刷新token的有效期
-                .redirectUris("http://www.baidu.com")//配置redirect_uri，用于授权成功后跳转
-                .scopes("all")//配置申请的权限范围
-                .authorizedGrantTypes("authorization_code", "password");//配置grant_type，表示授权类型
+        clients.withClientDetails(clientDetailsService);
+
     }
 }

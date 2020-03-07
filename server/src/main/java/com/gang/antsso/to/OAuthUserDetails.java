@@ -1,8 +1,8 @@
 package com.gang.antsso.to;
 
-import com.gang.antsso.lib.to.AbstractUserDetails;
-import com.gang.antsso.lib.to.UserInfo;
-import com.gang.antsso.lib.to.UserRoles;
+import com.gang.antsso.auth.api.to.AbstractUserDetails;
+import com.gang.antsso.auth.api.to.UserInfo;
+import com.gang.antsso.auth.api.to.UserRoles;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

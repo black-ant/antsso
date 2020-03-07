@@ -2,8 +2,10 @@ package com.gang.antsso.strategy;
 
 import com.gang.antsso.auth.api.entity.UserInfoSearch;
 import com.gang.antsso.auth.api.logic.OAuthUserInfo;
+import com.gang.antsso.datacenter.entity.SsoAppTypeEntity;
+import com.gang.antsso.datacenter.repository.SsoAppTypeRepository;
 import com.gang.antsso.ext.database.DataBaseLogic;
-import com.gang.antsso.lib.to.UserInfo;
+import com.gang.antsso.auth.api.to.UserInfo;
 import com.gang.common.lib.utils.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,13 +26,18 @@ public class DataBaseStrategy implements IStrategyLogic {
     @Autowired
     private ReflectionUtils reflectionUtils;
 
+    @Autowired
+    private SsoAppTypeRepository appTypeRepository;
+
     @Override
     public UserInfo getUserInfo(UserInfoSearch userInfoSearch) {
         try {
 
-            userInfoSearch.setLogicClass(DataBaseLogic.class.getName());
+            SsoAppTypeEntity appType = appTypeRepository.findByTypeCode(userInfoSearch.getAuthType());
 
-            OAuthUserInfo oAuthUserInfo = reflectionUtils.springClassLoad(userInfoSearch.getLogicClass());
+            logger.info("------> this appType is :{} <-------", appType.getTypeName());
+
+            OAuthUserInfo oAuthUserInfo = reflectionUtils.classLoadReflect(appType.getTypeClass());
 
             return oAuthUserInfo.getUserInfo(userInfoSearch);
 

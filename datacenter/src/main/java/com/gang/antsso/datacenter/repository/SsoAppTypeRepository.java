@@ -12,4 +12,6 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface SsoAppTypeRepository extends JpaRepository<SsoAppTypeEntity, String> {
+
+    SsoAppTypeEntity findByTypeCode(String typeCode);
 }

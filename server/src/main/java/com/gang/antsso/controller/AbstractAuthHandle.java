@@ -1,7 +1,7 @@
 package com.gang.antsso.controller;
 
-import com.gang.antsso.lib.to.AuthInfo;
-import com.gang.antsso.lib.to.UserInfo;
+import com.gang.antsso.auth.api.to.AuthInfo;
+import com.gang.antsso.auth.api.to.UserInfo;
 
 /**
  * @Classname AbstractAuthHandle

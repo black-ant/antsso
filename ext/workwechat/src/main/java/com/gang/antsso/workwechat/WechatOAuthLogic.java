@@ -2,7 +2,7 @@ package com.gang.antsso.workwechat;
 
 import com.gang.antsso.auth.api.entity.UserInfoSearch;
 import com.gang.antsso.auth.api.logic.OAuthUserInfo;
-import com.gang.antsso.lib.to.UserInfo;
+import com.gang.antsso.auth.api.to.UserInfo;
 import org.springframework.stereotype.Component;
 
 /**

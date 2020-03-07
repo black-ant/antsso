@@ -1,9 +1,12 @@
+com\gang\antsso\datacenter\repository\SsoAppSettingRepository.class
+com\gang\antsso\datacenter\entity\SsoClientEntity.class
 com\gang\antsso\datacenter\entity\SsoConfigEntity.class
 com\gang\antsso\datacenter\repository\SsoAppTypeRepository.class
 com\gang\antsso\datacenter\repository\SsoRoleRepository.class
 com\gang\antsso\datacenter\repository\SsoConfigRepository.class
 com\gang\antsso\datacenter\entity\SsoRoleEntity.class
 com\gang\antsso\datacenter\repository\UserRepository.class
+com\gang\antsso\datacenter\repository\SsoClientRepository.class
 com\gang\antsso\datacenter\entity\SsoAppTypeEntity.class
 com\gang\antsso\datacenter\repository\UserAppRefRepository.class
 com\gang\antsso\datacenter\repository\UserRoleRefRepository.class

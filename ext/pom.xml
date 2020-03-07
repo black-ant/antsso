@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>oauth</module>
         <module>easy</module>
         <module>workwechat</module>
         <module>opt</module>
