@@ -2,110 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181b602-0448-4f81-8ab5-62d867abdfbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/type/AntAuthType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com-gang-antsso.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoClientEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/opt/com-gang-antsso-ext-opt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/filter/AntPasswordFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthClientDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthClientDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/AuthorizationServerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c583d37-00ca-4e4d-a08d-92e36ce53627.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1c583d37-00ca-4e4d-a08d-92e36ce53627.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/AuthAPIApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/AuthAPIApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/entity/SearchItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/entity/SearchItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/entity/UserInfoSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/entity/UserInfoSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/logic/OAuthUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/logic/OAuthUserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/type/OAuthSearchType.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/type/OAuthSearchType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/auth-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/com-gang-antsso-common-lib.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/error/SSOErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/error/SSOErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/AbstractUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/to/AbstractUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/AuthBaseTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/to/AuthBaseTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/AuthInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/to/AuthInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/to/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/to/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-api/src/main/java/com/gang/antsso/auth/api/to/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/type/AuthType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/src/main/java/rebel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/error/SSOErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/AbstractUserDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/AuthBaseTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/AuthInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/to/UserRoles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/classes/com/gang/antsso/lib/type/AuthType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/com-gang-antsso-common-lib-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/lib/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/com-gang-antsso-datacenter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/com-gang-antsso-datacenter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoAppTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoAppTypeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/target/classes/com/gang/antsso/datacenter/repository/SsoAppTypeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/classes/com/gang/antsso/datacenter/repository/SsoAppTypeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/target/com-gang-antsso-datacenter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/com-gang-antsso-datacenter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/com-gang-antsso-ext.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/com-gang-antsso-ext.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/database/com-gang-antsso-ext-database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/database/com-gang-antsso-ext-database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/database/src/main/java/com/gang/antsso/ext/database/DataBaseLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/ext/database/src/main/java/com/gang/antsso/ext/database/DataBaseLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/database/target/classes/com/gang/antsso/ext/database/DataBaseLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/ext/database/target/classes/com/gang/antsso/ext/database/DataBaseLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/com-gang-antsso-ext-easy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/com-gang-antsso-ext-easy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/DataBaseLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/target/classes/com/gang/antsso/easy/DataBaseLogic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/target/com-gang-antsso-ext-easy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/target/com-gang-antsso-ext-easy-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/easy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ext/easy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/faceoauth/com-gang-antsso-ext-faceoauth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/faceoauth/com-gang-antsso-ext-faceoauth.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/opt/target/classes/META-INF/com-gang-antsso-ext-opt.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/workwechat/com-gang-antisso-ext-workwechat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ext/workwechat/com-gang-antisso-ext-workwechat.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/workwechat/src/main/java/com/gang/antsso/workwechat/WechatOAuthLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/ext/workwechat/src/main/java/com/gang/antsso/workwechat/WechatOAuthLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/workwechat/target/classes/com/gang/antsso/workwechat/WechatOAuthLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/ext/workwechat/target/classes/com/gang/antsso/workwechat/WechatOAuthLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/workwechat/target/com-gang-antisso-ext-workwechat-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ext/workwechat/target/com-gang-antisso-ext-workwechat-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/com-gang-antsso-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/com-gang-antsso-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/AntSsoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/AntSsoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/CloudAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/CloudAuthConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/AbstractAuthHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/controller/AbstractAuthHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/strategy/DataBaseStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/strategy/DataBaseStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/strategy/StrategyInvoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/strategy/StrategyInvoke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/oauth/workwechatlogin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/META-INF/com-gang-antsso-server.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/config/auth/CloudAuthConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/config/auth/CloudAuthConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthClientDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthClientDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthClientDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthClientDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/AntSsoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/AntSsoApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/config/auth/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/config/auth/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/AbstractAuthHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/controller/AbstractAuthHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/logic/OAuthUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/logic/OAuthUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/strategy/DataBaseStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/strategy/DataBaseStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/strategy/StrategyInvoke.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/strategy/StrategyInvoke.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/to/OAuthUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/to/OAuthUserDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/templates/oauth/workwechatlogin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/com-gang-antsso-server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/com-gang-antsso-server-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/logic/OAuthClientDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/logic/OAuthClientDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/to/OAuthClientDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/antsso/to/OAuthClientDetails.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -212,96 +122,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/SavedRequestAwareAuthenticationSuccessHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/DefaultRedirectStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/util/OnCommittedResponseWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="129" selection-start-line="129" selection-end-line="129" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/connector/ResponseFacade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="494" selection-start-line="494" selection-end-line="494" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/firewall/FirewalledResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="240" selection-start-line="240" selection-end-line="240" />
-              <folding>
-                <element signature="e#15262#15263#0" expanded="true" />
-                <element signature="e#15297#15298#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/AbstractVariableEvaluationContextPostProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="335" selection-start-line="335" selection-end-line="335" />
+            <state relative-caret-position="-176">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/csrf/CsrfFilter.java">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/DefaultWebSecurityExpressionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="208">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/DelegatingEvaluationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            <state relative-caret-position="208">
+              <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.java">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/EvaluationContextPostProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="208">
+              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/ExpressionBasedFilterInvocationSecurityMetadataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/WebExpressionConfigAttribute.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/WebExpressionVoter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/DefaultSecurityFilterChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/SecurityFilterChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/WebSecurityExpressionRoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -328,12 +234,16 @@
       <find>timeStep</find>
       <find>authenticationMa</find>
       <find>.css&quot;&gt;</find>
+      <find>GrantedAuthority</find>
+      <find>AuthorizationServerSecurityConfigurer</find>
+      <find>/user</find>
     </findStrings>
     <replaceStrings>
       <replace>.css}&quot;&gt;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\java\workspace\git\antsso</dir>
+      <dir>D:\java\resource\repo\org\springframework\security\spring-security-web\5.1.5.RELEASE\spring-security-web-5.1.5.RELEASE.jar</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -342,8 +252,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ext/opt/pom.xml" />
-        <option value="$PROJECT_DIR$/ext/opt/src/main/java/com/gang/antsso/opt/MainLogic.java" />
         <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthPasswordLogic.java" />
         <option value="$PROJECT_DIR$/ext/oauth/src/main/java/com/gang/antsso/oauth/OAuthUserDetailsService.java" />
         <option value="$PROJECT_DIR$/ext/opt/src/main/java/com/gang/antsso/opt/OtpMainLogic.java" />
@@ -366,7 +274,6 @@
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/strategy/UsernameStrategy.java" />
         <option value="$PROJECT_DIR$/ext/pom.xml" />
         <option value="$PROJECT_DIR$/common/lib/src/main/java/com/gang/antsso/lib/type/AuthType.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/filter/AntPasswordFilter.java" />
         <option value="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/entity/UserInfoSearch.java" />
         <option value="$PROJECT_DIR$/common/auth-api/src/main/java/com/gang/antsso/auth/api/type/AuthType.java" />
@@ -384,15 +291,18 @@
         <option value="$PROJECT_DIR$/server/pom.xml" />
         <option value="$PROJECT_DIR$/ext/easy/src/main/java/com/gang/antsso/easy/EasyAuthLogic.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/CloudAuthConfig.java" />
         <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoClientRepository.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthClientDetailsService.java" />
         <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/entity/SsoClientEntity.java" />
         <option value="$PROJECT_DIR$/server/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthClientDetails.java" />
         <option value="$PROJECT_DIR$/server/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/AntSsoApplication.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthClientDetailsService.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/AuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/CloudAuthConfig.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthClientDetails.java" />
       </list>
     </option>
   </component>
@@ -450,50 +360,6 @@
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antsso" type="462c0819:PsiDirectoryNode" />
               <item name="ext" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -525,6 +391,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antsso" type="462c0819:PsiDirectoryNode" />
+              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
@@ -544,7 +420,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ext" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
@@ -571,6 +447,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antsso" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="antsso" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="antsso" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="advice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
@@ -663,14 +557,42 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: org.springframework.security:spring-security-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
               <item name="spring-security-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: org.springframework.security:spring-security-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
               <item name="spring-security-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="csrf" type="462c0819:PsiDirectoryNode" />
+              <item name="access" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="expression" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="antsso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.security:spring-security-web:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-security-web-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -691,7 +613,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case/case antsso/antsso-demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -801,17 +723,19 @@
       <workItem from="1582428464422" duration="4711000" />
       <workItem from="1582451130844" duration="6967000" />
       <workItem from="1583557241997" duration="8159000" />
-      <workItem from="1583573030380" duration="18989000" />
+      <workItem from="1583573030380" duration="19735000" />
+      <workItem from="1583632585699" duration="10173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157898000" />
+    <option name="totallyTimeSpent" value="168817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6368613" visible="true" weight="0.2808311" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.63315696" visible="true" weight="0.19906166" />
       <window_info id="Structure" order="1" sideWeight="0.36196318" side_tool="true" weight="0.29088473" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -820,12 +744,11 @@
       <window_info id="Favorites" order="6" sideWeight="0.3631841" side_tool="true" weight="0.29088473" />
       <window_info id="JRebel" order="7" sideWeight="0.19171779" side_tool="true" weight="0.3505362" />
       <window_info id="Web" order="8" sideWeight="0.3604888" side_tool="true" weight="0.33378017" />
-      <window_info id="Persistence" order="9" sideWeight="0.36313868" side_tool="true" visible="true" weight="0.2808311" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32991204" />
+      <window_info id="Persistence" order="9" sideWeight="0.36795774" side_tool="true" weight="0.28485253" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32991204" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8538874" weight="0.52052784" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.19648094" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" visible="true" weight="0.04398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -833,14 +756,15 @@
       <window_info anchor="bottom" id="CheckStyle" order="8" sideWeight="0.49932975" weight="0.32991204" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.3181818" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.16715543" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="JRebel Console" order="13" sideWeight="0.50067025" side_tool="true" weight="0.32991204" />
+      <window_info anchor="bottom" id="JRebel Console" order="13" sideWeight="0.5013405" side_tool="true" weight="0.8416422" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32991204" />
       <window_info anchor="bottom" id="Problems" order="15" weight="0.5762463" />
       <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.32991204" />
       <window_info anchor="bottom" id="JRebel Executor" order="17" sideWeight="0.49932975" weight="0.20674486" />
       <window_info anchor="bottom" id="Messages" order="18" sideWeight="0.49932975" weight="0.6143695" />
+      <window_info anchor="bottom" id="Database Console" order="19" weight="0.32991204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -915,30 +839,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
-          <line>212</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
-          <line>217</line>
-          <properties />
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
-          <line>223</line>
-          <properties />
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
-          <line>229</line>
-          <properties />
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
           <line>315</line>
           <properties />
           <option name="timeStamp" value="55" />
@@ -948,12 +848,6 @@
           <line>49</line>
           <properties />
           <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/javax/servlet/http/HttpServletResponseWrapper.java</url>
-          <line>137</line>
-          <properties />
-          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/firewall/FirewalledResponse.java</url>
@@ -967,6 +861,84 @@
           <properties />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/connector/Response.java</url>
+          <line>1323</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/connector/Response.java</url>
+          <line>1325</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/AccessDeniedHandlerImpl.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/request/DefaultOAuth2RequestFactory.class</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/request/DefaultOAuth2RequestFactory.class</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthUserDetailsService.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthUserDetailsService.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/crypto/password/DelegatingPasswordEncoder.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/crypto/password/DelegatingPasswordEncoder.java</url>
+          <line>194</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/crypto/password/DelegatingPasswordEncoder.java</url>
+          <line>242</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/client/ClientCredentialsTokenEndpointFilter.class</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -977,405 +949,350 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>super.encodeRedirectURL(url)</expression-string>
+        <expression-string>delegate.matches(rawPassword, encodedPassword)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>response.encodeRedirectURL(redirectUrl)</expression-string>
+        <expression-string>userDetails.getPassword()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>calculateRedirectUrl(request.getContextPath(), url)</expression-string>
+        <expression-string>extractId(prefixEncodedPassword)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>getRedirectStrategy()</expression-string>
+        <expression-string>this.defaultPasswordEncoderForMatches
+				.matches(rawPassword, prefixEncodedPassword)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>requestCache.getMatchingRequest(
-				(HttpServletRequest) request, (HttpServletResponse) response)</expression-string>
+        <expression-string>this.getUserDetailsService()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.matcher.matches(url)</expression-string>
+        <expression-string>toAbsolute(location)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.httpMethod != valueOf(request.getMethod())</expression-string>
+        <expression-string>getContext()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>StringUtils.hasText(request.getMethod())</expression-string>
+        <expression-string>getContext().getUseRelativeRedirects()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>requiresAuthentication(request, response)</expression-string>
+        <expression-string>getRequest().getCoyoteRequest().getSupportsRelativeRedirects()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/WebMvcConfig.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/UserRolesLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="316">
+          <caret line="36" selection-start-line="36" selection-end-line="41" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthClientDetailsService.java">
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/antsso/datacenter/repository/SsoClientRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/PasswordSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="308">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthUserDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="22" column="98" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1319#1320#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/ServletInitializer.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthClientDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="404">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/CloudAuthConfig.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/logic/OAuthUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="23" column="73" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="34" selection-start-line="34" selection-end-line="35" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/savedrequest/HttpSessionRequestCache.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+        <state relative-caret-position="120">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/approval/ApprovalStoreUserApprovalHandler.class">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/header/HeaderWriterFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="120">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthClientDetails.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/ForwardAuthenticationSuccessHandler.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/logout.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/context/request/async/WebAsyncManagerIntegrationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AnonymousAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="112">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="112">
           <caret line="269" selection-start-line="269" selection-end-line="269" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/RequestContextFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="112">
           <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/FormContentFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/HiddenHttpMethodFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="120">
           <caret line="92" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/boot/spring-boot-actuator/2.1.6.RELEASE/spring-boot-actuator-2.1.6.RELEASE-sources.jar!/org/springframework/boot/actuate/metrics/web/servlet/WebMvcMetricsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="112">
           <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="112">
           <caret line="165" selection-start-line="165" selection-end-line="165" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/CharacterEncodingFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="140">
           <caret line="199" selection-start-line="199" selection-end-line="199" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/util/matcher/RequestMatcher.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="112">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE-sources.jar!/org/springframework/util/AntPathMatcher.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/core/StandardContextValve.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
+        <state relative-caret-position="228">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/tomcat/util/threads/TaskThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="1148" selection-start-line="1148" selection-end-line="1148" />
           <folding>
-            <element signature="e#6461#6462#0" expanded="true" />
+            <element signature="e#25302#25303#0" expanded="true" />
+            <element signature="e#25341#25342#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/util/matcher/AntPathRequestMatcher.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/tomcat/util/net/SocketProcessorBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="153" column="62" lean-forward="true" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="66" />
+        <state relative-caret-position="120">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/tomcat/util/net/NioEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="1586" selection-start-line="1586" selection-end-line="1586" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/coyote/AbstractProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="852" selection-start-line="852" selection-end-line="852" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/coyote/AbstractProcessorLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/coyote/http11/Http11Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/ProviderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
           <folding>
-            <element signature="e#8704#8705#0" expanded="true" />
-            <element signature="e#8761#8762#0" expanded="true" />
+            <element signature="e#5593#5594#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar!/org/apache/commons/logging/Log.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/crypto/password/PasswordEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+        <state relative-caret-position="112">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/ext/database/src/main/java/com/gang/antsso/datacenter/entity/SsoClientEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AuthenticationSuccessHandler.java">
+    <entry file="file://$PROJECT_DIR$/ext/database/src/main/java/com/gang/antsso/ext/database/DataBaseLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/SimpleUrlAuthenticationSuccessHandler.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/AuthorizationServerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/header/HeaderWriterFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/savedrequest/RequestCacheAwareFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/RedirectStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
+        <state relative-caret-position="316">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="e#6922#6923#0" expanded="true" />
-            <element signature="e#6952#6953#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/context/SaveContextOnUpdateOrErrorResponseWrapper.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="112">
+          <caret line="593" selection-start-line="593" selection-end-line="593" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/javax/servlet/http/HttpServletResponse.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/CloudAuthConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="176" column="16" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/javax/servlet/http/HttpServletResponseWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        <state relative-caret-position="292">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
-            <element signature="e#1871#1872#0" expanded="true" />
-            <element signature="e#1935#1936#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/connector/Response.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/config/auth/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="1292" selection-start-line="1292" selection-end-line="1292" />
+        <state relative-caret-position="160">
+          <caret line="44" column="102" lean-forward="true" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/connector/ResponseFacade.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/antsso/to/OAuthClientDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="494" selection-start-line="494" selection-end-line="494" />
+        <state relative-caret-position="220">
+          <caret line="65" column="84" lean-forward="true" selection-start-line="65" selection-start-column="84" selection-end-line="65" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/firewall/FirewalledResponse.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="186">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#6804#6805#0" expanded="true" />
+            <element signature="e#6836#6837#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/util/OnCommittedResponseWrapper.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/crypto/password/DelegatingPasswordEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/DefaultRedirectStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/SavedRequestAwareAuthenticationSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="208">
+          <caret line="200" column="56" lean-forward="true" selection-start-line="200" selection-start-column="15" selection-end-line="200" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
+        <state relative-caret-position="112">
+          <caret line="315" selection-start-line="315" selection-end-line="315" />
           <folding>
             <element signature="e#15262#15263#0" expanded="true" />
             <element signature="e#15297#15298#0" expanded="true" />
@@ -1383,31 +1300,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/client/ClientCredentialsTokenEndpointFilter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="120">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/csrf/CsrfFilter.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="120">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/DefaultWebSecurityExpressionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        <state relative-caret-position="208">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/DelegatingEvaluationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="335" selection-start-line="335" selection-end-line="335" />
+        <state relative-caret-position="208">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/EvaluationContextPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/ExpressionBasedFilterInvocationSecurityMetadataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/WebExpressionConfigAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/WebExpressionVoter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/DefaultSecurityFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/SecurityFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/WebSecurityExpressionRoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../resource/repo/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/access/expression/AbstractVariableEvaluationContextPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>

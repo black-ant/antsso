@@ -43,11 +43,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         //该方法用于用户认证，此处添加内存用户，并且指定了权限
         logger.info("------> password :{} <-------", new BCryptPasswordEncoder().encode("123456"));
         auth.userDetailsService(oAuthUserDetailsService).passwordEncoder(new BCryptPasswordEncoder());
-
-        auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder())
-                .withUser("user").password(new BCryptPasswordEncoder().encode("123456")).roles("USER")
-                .and()
-                .withUser("admin").password(new BCryptPasswordEncoder().encode("123456")).roles("ADMIN");
     }
 
     @Override
@@ -66,8 +61,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .failureHandler(oAuthFailureService)
-                .loginPage("/login")                             //定义登录的页面"/login"，允许访问
-                .permitAll()
+                .loginPage("/login").permitAll()
                 .and()
                 .logout()                                           //默认的"/logout", 允许访问
                 .permitAll();

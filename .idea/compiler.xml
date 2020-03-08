@@ -11,15 +11,14 @@
         <module name="com-gang-antsso-auth-api" />
         <module name="com-gang-antsso-ext-opt" />
         <module name="com-gang-antsso-ext-database" />
-        <module name="com-gang-antsso-server" />
         <module name="com-gang-antsso-datacenter" />
         <module name="com-gang-antisso-ext-workwechat" />
+        <module name="com-gang-antsso-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com-gang-antsso-common" target="1.8" />
       <module name="com-gang-antsso-common-lib" target="1.8" />
-      <module name="com-gang-antsso-ext-database" target="1.8" />
       <module name="com-gang-commn-mybatis" target="1.8" />
       <module name="com-gang-common" target="1.8" />
       <module name="com-gang-common-cache" target="1.8" />

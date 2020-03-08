@@ -5,10 +5,6 @@ gang:
     swagger:
       basePackage: "com.gang"
 spring:
-  security:
-    user:
-      name: gang
-      password: 123456
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://127.0.0.1:3306/antsso?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true

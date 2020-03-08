@@ -4,13 +4,17 @@ import com.gang.antsso.datacenter.entity.SsoClientEntity;
 import org.apache.commons.collections4.SetUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.provider.ClientDetails;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 /**
  * @Classname OAuthClientDetails
@@ -20,6 +24,9 @@ import java.util.Set;
  */
 
 public class OAuthClientDetails extends SsoClientEntity implements ClientDetails {
+
+    private Pattern BCRYPT_PATTERN = Pattern
+            .compile("\\A\\$2a?\\$\\d\\d\\$[./0-9A-Za-z]{53}");
 
 
     public OAuthClientDetails() {
@@ -53,7 +60,13 @@ public class OAuthClientDetails extends SsoClientEntity implements ClientDetails
 
     @Override
     public String getClientSecret() {
-        return super.getClientSecret();
+
+        // Security 5 的 默认加密处理
+        if (!BCRYPT_PATTERN.matcher(super.getClientSecret()).matches()) {
+            return "{bcrypt}" + new BCryptPasswordEncoder().encode(super.getClientSecret());
+        } else {
+            return super.getClientSecret();
+        }
     }
 
     @Override
@@ -93,7 +106,10 @@ public class OAuthClientDetails extends SsoClientEntity implements ClientDetails
 
     @Override
     public Collection<GrantedAuthority> getAuthorities() {
-        return null;
+        ArrayList<GrantedAuthority> authRoles = new ArrayList<GrantedAuthority>();
+        authRoles.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
+        authRoles.add(new SimpleGrantedAuthority("ROLE_USER"));
+        return authRoles;
     }
 
     @Override
@@ -108,7 +124,7 @@ public class OAuthClientDetails extends SsoClientEntity implements ClientDetails
 
     @Override
     public boolean isAutoApprove(String s) {
-        return Boolean.FALSE;
+        return Boolean.TRUE;
     }
 
     @Override
