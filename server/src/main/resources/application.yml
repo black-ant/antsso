@@ -31,4 +31,20 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  profiles:
+    active: application-vcode.yml
+com:
+  gang:
+    antsso:
+      msg:
+        email:
+          account: '2331746732@qq.com'
+          password: 'wyiyyjowgxtndjde'
+          protocol: 'SMTP'
+          host: 'smtp.qq.com'
+          port: '465'
+          auth: 'true'
+          enable: 'true'
+          time: 20
+
 

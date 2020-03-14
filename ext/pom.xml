@@ -17,10 +17,10 @@
         <module>workwechat</module>
         <module>opt</module>
         <module>faceoauth</module>
+        <module>vcode</module>
     </modules>
 
     <dependencies>
-
     </dependencies>
 
 </project>

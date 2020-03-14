@@ -29,6 +29,10 @@ public class SsoUserEntity extends AbstractEntity {
     private String userName;
 
     @Basic
+    @Column(name = "user_mobile")
+    private String userMobile;
+
+    @Basic
     @Column(name = "user_info")
     private String userInfo;
 

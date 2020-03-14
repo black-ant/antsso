@@ -13,6 +13,9 @@ public enum AntAuthType {
     // 数据库校验
     DATABASE("DATABASE"),
 
+    // 数据库校验
+    VCODE("VCODE"),
+
     // OTP 认证
     OTP("OPT"),
 

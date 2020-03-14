@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
@@ -52,7 +53,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         //regexMatchers--使用正则表达式匹配
         http.authorizeRequests()
                 .antMatchers("/").permitAll()
-                .antMatchers("/index").permitAll()
+                .regexMatchers(".*before.*").permitAll()
+                .antMatchers("/swagger-ui.html").permitAll()
                 .regexMatchers(".*sign.*").permitAll()
                 .regexMatchers(".*unauth.*").permitAll()
                 .antMatchers("/admin").hasRole("ADMIN")
@@ -66,5 +68,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .logout()                                           //默认的"/logout", 允许访问
                 .permitAll();
 
+    }
+
+    /**
+     * 设置不拦截
+     *
+     * @param web
+     * @throws Exception
+     */
+    @Override
+    public void configure(WebSecurity web) {
+        web.ignoring().antMatchers("/js/**", "/css/**", "/images/**", "/img/**", "/druid/**", "/fonts/**");
     }
 }

@@ -12,4 +12,7 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface UserRepository extends JpaRepository<SsoUserEntity, String> {
+
+    SsoUserEntity findByUserMobile(String mobile);
+
 }

@@ -53,7 +53,9 @@ public class OAuthUserDetailsService implements UserDetailsService {
         logger.info("------> this is load  :{}<-------", userName);
 
         //grantedAuthorities对应数据库中权限的表
-        UserInfo userInfo = strategyInvoke.getUserInfo(new UserInfoSearch(userName).setType(AntAuthType.EASY));
+        //        UserInfo userInfo = strategyInvoke.getUserInfo(new UserInfoSearch(userName).setType(AntAuthType
+        //        .EASY));
+        UserInfo userInfo = strategyInvoke.getUserInfo(new UserInfoSearch(userName).setType(AntAuthType.VOCDE));
 
         if (!BCRYPT_PATTERN.matcher(userInfo.getPassword()).matches()) {
             logger.info("------> this password is unlike bcrypt <-------");

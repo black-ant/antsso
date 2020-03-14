@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="com-gang-antsso-ext-faceoauth" />
         <module name="com-gang-antsso-ext-easy" />
+        <module name="com-gang-antsso-ext-vcode" />
         <module name="com-gang-antsso-auth-api" />
         <module name="com-gang-antsso-ext-opt" />
         <module name="com-gang-antsso-ext-database" />
@@ -19,6 +20,7 @@
     <bytecodeTargetLevel>
       <module name="com-gang-antsso-common" target="1.8" />
       <module name="com-gang-antsso-common-lib" target="1.8" />
+      <module name="com-gang-antsso-ext-database" target="1.8" />
       <module name="com-gang-commn-mybatis" target="1.8" />
       <module name="com-gang-common" target="1.8" />
       <module name="com-gang-common-cache" target="1.8" />
@@ -33,6 +35,7 @@
       <module name="com-gang-common-msg-kafka" target="1.8" />
       <module name="com-gang-common-msg-manage" target="1.8" />
       <module name="com-gang-common-msg-rabbitmq" target="1.8" />
+      <module name="com-gang-common-msg-sms" target="1.8" />
       <module name="com-gang-common-multiple-source" target="1.8" />
       <module name="com-gang-common-mybatis-plus" target="1.8" />
       <module name="com-gang-common-parent-sdk" target="1.8" />
@@ -56,6 +59,7 @@
       <module name="com-gang-antsso-ext-easy" options="-parameters" />
       <module name="com-gang-antsso-ext-faceoauth" options="-parameters" />
       <module name="com-gang-antsso-ext-opt" options="-parameters" />
+      <module name="com-gang-antsso-ext-vcode" options="-parameters" />
       <module name="com-gang-antsso-server" options="-parameters" />
       <module name="com-gang-commn-mybatis" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-cache" options="-parameters -Xlint:unchecked" />
@@ -68,6 +72,7 @@
       <module name="com-gang-common-msg-kafka" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-msg-manage" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-msg-rabbitmq" options="-parameters -Xlint:unchecked" />
+      <module name="com-gang-common-msg-sms" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-multiple-source" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-mybatis-plus" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-parent-sdk" options="-parameters -Xlint:unchecked" />

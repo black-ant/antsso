@@ -4,6 +4,7 @@ D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\Abs
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\to\OAuthClientDetails.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\logic\OAuthUserDetailsService.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\advice\ControllerAdvice.java
+D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\config\auth\AuthorizationServerConfig.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\config\auth\ServletInitializer.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\SsoAppTypeController.java
 D:\java\workspace\git\antsso\server\src\main\java\com\gang\antsso\controller\UnAuthTestContoller.java

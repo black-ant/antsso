@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/../exp/common/ext-msg/msg-kafka/pom.xml" />
         <option value="$PROJECT_DIR$/../exp/common/ext-msg/msg-manage/pom.xml" />
         <option value="$PROJECT_DIR$/../exp/common/ext-msg/msg-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/../exp/common/ext-msg/msg-sms/pom.xml" />
         <option value="$PROJECT_DIR$/../exp/common/ext-msg/pom.xml" />
         <option value="$PROJECT_DIR$/../exp/common/ext-sync/dingtalk/pom.xml" />
         <option value="$PROJECT_DIR$/../exp/common/ext-sync/pom.xml" />
