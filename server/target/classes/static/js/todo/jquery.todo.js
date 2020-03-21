@@ -33,7 +33,7 @@
         },
         {
             'id': '3',
-            'text': 'Creating component page',
+            'text': 'Creating common page',
             'done': true
         },
         {
@@ -123,7 +123,7 @@
 
         //binding todo done chk
         $(document).on("change", this.$todoDonechk, function() {
-            if(this.checked) 
+            if(this.checked)
                 $this.markTodo($(this).attr('id'), true);
             else
                 $this.markTodo($(this).attr('id'), false);
@@ -143,7 +143,7 @@
     },
     //init TodoApp
     $.TodoApp = new TodoApp, $.TodoApp.Constructor = TodoApp
-    
+
 }(window.jQuery),
 
 //initializing todo app

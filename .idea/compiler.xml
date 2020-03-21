@@ -6,15 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com-gang-antsso-ext-faceoauth" />
+        <module name="com-gang-antsso-auth-api" />
         <module name="com-gang-antsso-ext-easy" />
         <module name="com-gang-antsso-ext-vcode" />
-        <module name="com-gang-antsso-auth-api" />
         <module name="com-gang-antsso-ext-opt" />
-        <module name="com-gang-antsso-ext-database" />
+        <module name="com-gang-antsso-ext-faceoauth" />
+        <module name="com-gang-antsso-server" />
         <module name="com-gang-antsso-datacenter" />
         <module name="com-gang-antisso-ext-workwechat" />
-        <module name="com-gang-antsso-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

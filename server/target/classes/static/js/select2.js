@@ -661,7 +661,7 @@ the specific language governing permissions and limitations under the Apache Lic
 
             this.id=opts.id;
 
-            // destroy if called on an existing component
+            // destroy if called on an existing common
             if (opts.element.data("select2") !== undefined &&
                 opts.element.data("select2") !== null) {
                 opts.element.data("select2").destroy();
@@ -719,7 +719,7 @@ the specific language governing permissions and limitations under the Apache Lic
             installDebouncedScroll(80, this.results);
             this.dropdown.on("scroll-debounced", resultsSelector, this.bind(this.loadMoreIfNeeded));
 
-            // do not propagate change event from the search field out of the component
+            // do not propagate change event from the search field out of the common
             $(this.container).on("change", ".select2-input", function(e) {e.stopPropagation();});
             $(this.dropdown).on("change", ".select2-input", function(e) {e.stopPropagation();});
 

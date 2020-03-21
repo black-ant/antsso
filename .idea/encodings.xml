@@ -12,6 +12,8 @@
     <file url="file://$PROJECT_DIR$/ext/vcode" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ext/workwechat" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/src/main/resources/templates/data-table.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/server/src/main/resources/templates/setting.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/../exp/common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common/common-cache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../exp/common/common-elastic" charset="UTF-8" />

@@ -43,7 +43,7 @@
      *
      * Definition of an abstract UI control
      *
-     * Each concrete component must call this one.
+     * Each concrete common must call this one.
      * <code>
      * k.o.call(this);
      * </code>
@@ -75,7 +75,7 @@
         this.relative = false;
         this.relativeWidth = false;
         this.relativeHeight = false;
-        this.$div = null; // component div
+        this.$div = null; // common div
 
         this.run = function () {
             var cf = function (e, conf) {
@@ -224,7 +224,7 @@
                                   && this.o.height.indexOf('%');
             this.relative = this.relativeWidth || this.relativeHeight;
 
-            // computes size and carves the component
+            // computes size and carves the common
             this._carve();
 
             // prepares props for transaction

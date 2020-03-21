@@ -1903,7 +1903,7 @@
       function getPropertyUnitValue (target, prop, unit) {
         var value = getStyle(target, prop);  // get the computed style value
 
-        var numeric = value.match(/\d+/);  // get the numeric component
+        var numeric = value.match(/\d+/);  // get the numeric common
         if ( numeric !== null ) {
           numeric = numeric[0];  // get the string
 

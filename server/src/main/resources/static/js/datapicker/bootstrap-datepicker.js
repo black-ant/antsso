@@ -306,7 +306,7 @@
 					}]
 				];
 			}
-			else if (this.component && this.hasInput){ // component: input + button
+			else if (this.component && this.hasInput){ // common: input + button
 				this._events = [
 					// For components that are not readonly, allow keyboard nav
 					[this.element.find('input'), {
@@ -1660,7 +1660,7 @@
 			if ($this.data('datepicker'))
 				return;
 			e.preventDefault();
-			// component click requires us to explicitly show it
+			// common click requires us to explicitly show it
 			$this.datepicker('show');
 		}
 	);
