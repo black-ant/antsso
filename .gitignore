@@ -1,0 +1,14 @@
+*.log
+*.iml
+.project
+.settings/
+target
+.classpath
+.factorypath
+*.launch
+*.class
+.idea/
+*.iml
+build
+/.checkstyle.*
+*target*

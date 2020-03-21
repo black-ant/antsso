@@ -1,8 +1,12 @@
 package com.gang.antsso.datacenter.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Objects;
@@ -27,6 +31,8 @@ public class SsoAppTypeEntity extends AbstractEntity {
 
     @Id
     @Column(name = "id")
+    @GenericGenerator(name = "user-uuid", strategy = "uuid")
+    @GeneratedValue(generator = "user-uuid")
     public String getId() {
         return id;
     }
