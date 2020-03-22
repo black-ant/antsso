@@ -103,19 +103,23 @@
                                         <tr>
                                             <th data-field="state" data-checkbox="true"></th>
                                             <th data-field="id">主键</th>
-                                            <th data-field="userName" data-editable="true">人员名称</th>
-                                            <th data-field="userMobile" data-editable="true">联系电话</th>
-                                            <th data-field="userInfo" data-editable="true">额外信息</th>
+                                            <th data-field="roleName" data-editable="true">角色名称</th>
+                                            <th data-field="roleCode" data-editable="true">角色代码</th>
+                                            <th data-field="roleType" data-editable="true">角色类型</th>
+                                            <th data-field="roleStatus" data-editable="true">角色状态</th>
+                                            <th data-field="roleInfo">角色信息</th>
                                             <th data-field="action">Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr th:each="data:${datalist}">
+                                        <tr th:each="type:${datalist}">
                                             <td></td>
-                                            <td th:text="${data.id}"></td>
-                                            <td th:text="${data.userName}"></td>
-                                            <td th:text="${data.userMobile}"></td>
-                                            <td th:text="${data.userInfo}"></td>
+                                            <td th:text="${type.id}"></td>
+                                            <td th:text="${type.roleName}"></td>
+                                            <td th:text="${type.roleCode}"></td>
+                                            <td th:text="${type.roleType}"></td>
+                                            <td th:text="${type.roleStatus}"></td>
+                                            <td th:text="${type.roleInfo}"></td>
                                             <td class="datatable-ct"><i class="fa fa-check"></i>
                                             </td>
                                         </tr>

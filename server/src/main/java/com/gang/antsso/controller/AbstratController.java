@@ -19,12 +19,12 @@ public class AbstratController<T extends JpaRepository, D extends AbstractEntity
     protected JpaRepository jpaRepository;
 
     @GetMapping("get/{key}")
-    public ResponseModel getSsoConfigEntity(@PathVariable("key") String key) {
+    public ResponseModel get(@PathVariable("key") String key) {
         return ResponseModel.commonResponse(jpaRepository.getOne(key));
     }
 
     @GetMapping("getall")
-    public ResponseModel getAll() {
+    public ResponseModel list() {
         return ResponseModel.commonResponse(jpaRepository.findAll());
     }
 

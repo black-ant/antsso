@@ -93,15 +93,15 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="all-form-element-inner">
-                                                <form th:action="@{/view/type/insert}" th:object="${entity}"
+                                                <form th:action="@{/view/group/insert}" th:object="${entity}"
                                                       th:method="post">
                                                     <div class="form-group-inner">
                                                         <div class="row">
                                                             <div class="col-lg-3">
-                                                                <label class="login2 pull-right pull-right-pro">配置信息</label>
+                                                                <label class="login2 pull-right pull-right-pro">组名称</label>
                                                             </div>
                                                             <div class="col-lg-9">
-                                                                <input th:type="text" th:field="*{settingBody}"
+                                                                <input th:type="text" th:field="*{groupName}"
                                                                        class="form-control"/>
                                                             </div>
                                                         </div>
@@ -109,10 +109,10 @@
                                                     <div class="form-group-inner">
                                                         <div class="row">
                                                             <div class="col-lg-3">
-                                                                <label class="login2 pull-right pull-right-pro">配置名称</label>
+                                                                <label class="login2 pull-right pull-right-pro">组角色</label>
                                                             </div>
                                                             <div class="col-lg-9">
-                                                                <input type="text" th:field="*{settingName}"
+                                                                <input type="text" th:field="*{groupRole}"
                                                                        class="form-control"/>
                                                             </div>
                                                         </div>
@@ -120,10 +120,10 @@
                                                     <div class="form-group-inner">
                                                         <div class="row">
                                                             <div class="col-lg-3">
-                                                                <label class="login2 pull-right pull-right-pro">配置类型</label>
+                                                                <label class="login2 pull-right pull-right-pro">组Code</label>
                                                             </div>
                                                             <div class="col-lg-9">
-                                                                <input type="text" th:field="*{settingType}"
+                                                                <input type="text" th:field="*{groupCode}"
                                                                        class="form-control"/>
                                                             </div>
                                                         </div>
@@ -131,10 +131,10 @@
                                                     <div class="form-group-inner">
                                                         <div class="row">
                                                             <div class="col-lg-3">
-                                                                <label class="login2 pull-right pull-right-pro">类型名称</label>
+                                                                <label class="login2 pull-right pull-right-pro">组描述</label>
                                                             </div>
                                                             <div class="col-lg-9">
-                                                                <input type="text" th:field="*{typeName}"
+                                                                <input type="text" th:field="*{groupDesc}"
                                                                        class="form-control"/>
                                                             </div>
                                                         </div>
@@ -142,32 +142,10 @@
                                                     <div class="form-group-inner">
                                                         <div class="row">
                                                             <div class="col-lg-3">
-                                                                <label class="login2 pull-right pull-right-pro">配置代码</label>
+                                                                <label class="login2 pull-right pull-right-pro">组状态</label>
                                                             </div>
                                                             <div class="col-lg-9">
-                                                                <input type="text" th:field="*{settingTypeCode}"
-                                                                       class="form-control"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-3">
-                                                                <label class="login2 pull-right pull-right-pro">配置控制</label>
-                                                            </div>
-                                                            <div class="col-lg-9">
-                                                                <input type="text" th:field="*{settingControl}"
-                                                                       class="form-control"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-3">
-                                                                <label class="login2 pull-right pull-right-pro">配置策略</label>
-                                                            </div>
-                                                            <div class="col-lg-9">
-                                                                <input type="text" th:field="*{settingPolicy}"
+                                                                <input type="text" th:field="*{groupStatus}"
                                                                        class="form-control"/>
                                                             </div>
                                                         </div>

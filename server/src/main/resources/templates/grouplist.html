@@ -103,19 +103,24 @@
                                         <tr>
                                             <th data-field="state" data-checkbox="true"></th>
                                             <th data-field="id">主键</th>
-                                            <th data-field="userName" data-editable="true">人员名称</th>
-                                            <th data-field="userMobile" data-editable="true">联系电话</th>
-                                            <th data-field="userInfo" data-editable="true">额外信息</th>
+                                            <th data-field="groupCode" data-editable="true">组代码</th>
+                                            <th data-field="groupName" data-editable="true">组名称</th>
+                                            <th data-field="groupRole" data-editable="true">组权限</th>
+                                            <th data-field="groupDesc" data-editable="true">组描述</th>
+                                            <th data-field="groupStatus">组状态</th>
                                             <th data-field="action">Action</th>
                                         </tr>
+
                                         </thead>
                                         <tbody>
                                         <tr th:each="data:${datalist}">
                                             <td></td>
                                             <td th:text="${data.id}"></td>
-                                            <td th:text="${data.userName}"></td>
-                                            <td th:text="${data.userMobile}"></td>
-                                            <td th:text="${data.userInfo}"></td>
+                                            <td th:text="${data.groupCode}"></td>
+                                            <td th:text="${data.groupName}"></td>
+                                            <td th:text="${data.groupRole}"></td>
+                                            <td th:text="${data.groupDesc}"></td>
+                                            <td th:text="${data.groupStatus}"></td>
                                             <td class="datatable-ct"><i class="fa fa-check"></i>
                                             </td>
                                         </tr>

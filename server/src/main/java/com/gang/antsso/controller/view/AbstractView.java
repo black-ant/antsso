@@ -2,15 +2,16 @@ package com.gang.antsso.controller.view;
 
 import com.gang.antsso.datacenter.entity.AbstractEntity;
 import com.gang.antsso.datacenter.entity.SsoAppTypeEntity;
-import com.gang.common.lib.to.ResponseModel;
+import com.gang.common.lib.utils.ReflectionUtils;
+import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -26,10 +27,18 @@ public abstract class AbstractView<T extends JpaRepository, D extends AbstractEn
 
     protected JpaRepository jpaRepository;
 
-    @GetMapping("get")
-    public ModelAndView getSsoConfigEntity(@RequestParam("key") String key) {
+    @Autowired
+    private ReflectionUtils reflectionUtils;
+
+    @GetMapping("get/{key}")
+    public ModelAndView getSsoConfigEntity(@PathVariable("key") String key) {
         ModelAndView modelAndView = getModelAndView("");
-        modelAndView.addObject("data", jpaRepository.getOne(key));
+        if (key.equals("null")) {
+            modelAndView.addObject("data", reflectionUtils.reloadByParadigm(this.getClass(), 1));
+        } else {
+            modelAndView.addObject("data", jpaRepository.getOne(key));
+        }
+
         modelAndView.addObject("entity", new SsoAppTypeEntity());
         return modelAndView;
     }
@@ -71,4 +80,6 @@ public abstract class AbstractView<T extends JpaRepository, D extends AbstractEn
     }
 
     public abstract String getMapping();
+
+    //    public abstract Class<D> backClass();
 }
