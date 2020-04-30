@@ -7,22 +7,11 @@
         <groupId>com.gang.antsso</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>com-gang-antsso-ext-database</artifactId>
+    <artifactId>com-gang-antisso-ext-dingtalk</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antsso-common-lib</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antsso-datacenter</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-auth-api</artifactId>
