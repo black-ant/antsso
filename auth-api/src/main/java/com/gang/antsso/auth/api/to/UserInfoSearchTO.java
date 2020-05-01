@@ -1,36 +1,38 @@
-package com.gang.antsso.auth.api.entity;
+package com.gang.antsso.auth.api.to;
 
 import com.gang.antsso.auth.api.type.AntAuthType;
 import lombok.Data;
 
 /**
- * @Classname UserInfoSearch
+ * @Classname UserInfoSearchTO
  * @Description TODO
  * @Date 2020/1/26 21:10
  * @Created by zengzg
  */
 @Data
-public class UserInfoSearch<T> {
+public class UserInfoSearchTO<T> {
 
     // 唯一键
     private T searchInfo;
 
     private String authType;
 
+    private OAuthExtSettingTO oAuthExtSettingTO;
 
-    public UserInfoSearch() {
+
+    public UserInfoSearchTO() {
     }
 
-    public UserInfoSearch(T searchInfo) {
+    public UserInfoSearchTO(T searchInfo) {
         this.searchInfo = searchInfo;
     }
 
-    public UserInfoSearch setType(AntAuthType antAuthType) {
+    public UserInfoSearchTO setType(AntAuthType antAuthType) {
         this.authType = antAuthType.getCode();
         return this;
     }
 
-    public UserInfoSearch setType(String antAuthType) {
+    public UserInfoSearchTO setType(String antAuthType) {
         this.authType = antAuthType;
         return this;
     }
@@ -49,5 +51,13 @@ public class UserInfoSearch<T> {
 
     public void setSearchInfo(T searchInfo) {
         this.searchInfo = searchInfo;
+    }
+
+    public OAuthExtSettingTO getoAuthExtSettingTO() {
+        return oAuthExtSettingTO;
+    }
+
+    public void setoAuthExtSettingTO(OAuthExtSettingTO oAuthExtSettingTO) {
+        this.oAuthExtSettingTO = oAuthExtSettingTO;
     }
 }

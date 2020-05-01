@@ -1,18 +1,11 @@
 package com.gang.antsso.easy;
 
-import com.gang.antsso.auth.api.entity.UserInfoSearch;
-import com.gang.antsso.auth.api.logic.OAuthUserInfo;
-import com.gang.antsso.datacenter.entity.SsoUserEntity;
-import com.gang.antsso.datacenter.repository.UserRepository;
+import com.gang.antsso.auth.api.to.UserInfoSearchTO;
+import com.gang.antsso.auth.api.logic.IOAuthUserInfo;
 import com.gang.antsso.auth.api.to.UserInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @Classname DataBaseLogic
@@ -21,14 +14,14 @@ import java.util.Map;
  * @Created by zengzg
  */
 @Component
-public class EasyAuthLogic implements OAuthUserInfo<String> {
+public class EasyAuthLogic implements IOAuthUserInfo<String> {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
-    public UserInfo getUserInfo(UserInfoSearch<String> userInfoSearch) {
+    public UserInfo searchUserInfo(UserInfoSearchTO<String> userInfoSearchTO) {
 
-        logger.info("------> this is in easy :{} <-------", userInfoSearch.getSearchInfo());
+        logger.info("------> this is in easy :{} <-------", userInfoSearchTO.getSearchInfo());
 
         UserInfo userInfo = new UserInfo();
 
@@ -39,4 +32,6 @@ public class EasyAuthLogic implements OAuthUserInfo<String> {
 
         return userInfo;
     }
+
+
 }

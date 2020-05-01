@@ -1,7 +1,7 @@
 package com.gang.antsso.workwechat;
 
-import com.gang.antsso.auth.api.entity.UserInfoSearch;
-import com.gang.antsso.auth.api.logic.OAuthUserInfo;
+import com.gang.antsso.auth.api.to.UserInfoSearchTO;
+import com.gang.antsso.auth.api.logic.IOAuthUserInfo;
 import com.gang.antsso.auth.api.to.UserInfo;
 import org.springframework.stereotype.Component;
 
@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
  * @Created by zengzg
  */
 @Component
-public class WechatOAuthLogic implements OAuthUserInfo {
+public class WechatOAuthLogic implements IOAuthUserInfo {
 
     @Override
-    public UserInfo getUserInfo(UserInfoSearch userInfoSearch) {
+    public UserInfo searchUserInfo(UserInfoSearchTO userInfoSearchTO) {
         return null;
     }
 }

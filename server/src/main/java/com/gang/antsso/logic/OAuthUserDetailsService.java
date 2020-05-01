@@ -1,10 +1,9 @@
 package com.gang.antsso.logic;
 
 import com.alibaba.fastjson.JSONObject;
-import com.gang.antsso.auth.api.entity.UserInfoSearch;
+import com.gang.antsso.auth.api.to.UserInfoSearchTO;
 import com.gang.antsso.auth.api.to.UserInfo;
 import com.gang.antsso.auth.api.type.AntAuthType;
-import com.gang.antsso.lib.type.AuthType;
 import com.gang.antsso.password.CommonPasswordService;
 import com.gang.antsso.strategy.StrategyInvoke;
 import com.gang.antsso.to.OAuthUserDetails;
@@ -53,9 +52,9 @@ public class OAuthUserDetailsService implements UserDetailsService {
         logger.info("------> this is load  :{}<-------", userName);
 
         //grantedAuthorities对应数据库中权限的表
-        UserInfo userInfo = strategyInvoke.getUserInfo(new UserInfoSearch(userName).setType(AntAuthType
+        UserInfo userInfo = strategyInvoke.getUserInfo(new UserInfoSearchTO(userName).setType(AntAuthType
                 .EASY));
-        //        UserInfo userInfo = strategyInvoke.getUserInfo(new UserInfoSearch(userName).setType(AntAuthType
+        //        UserInfo userInfo = strategyInvoke.getUserInfo(new UserInfoSearchTO(userName).setType(AntAuthType
         //        .VOCDE));
 
         if (!BCRYPT_PATTERN.matcher(userInfo.getPassword()).matches()) {

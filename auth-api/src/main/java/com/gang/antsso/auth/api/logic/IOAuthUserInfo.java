@@ -1,6 +1,6 @@
 package com.gang.antsso.auth.api.logic;
 
-import com.gang.antsso.auth.api.entity.UserInfoSearch;
+import com.gang.antsso.auth.api.to.UserInfoSearchTO;
 import com.gang.antsso.auth.api.to.UserInfo;
 
 /**
@@ -9,7 +9,7 @@ import com.gang.antsso.auth.api.to.UserInfo;
  * @Date 2020/1/26 17:46
  * @Created by zengzg
  */
-public interface OAuthUserInfo<T> {
+public interface IOAuthUserInfo<T> {
 
-    UserInfo getUserInfo(UserInfoSearch<T> userInfoSearch);
+    UserInfo searchUserInfo(UserInfoSearchTO<T> userInfoSearchTO);
 }

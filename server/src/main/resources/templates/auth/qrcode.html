@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/commonHead :: common_header(~{::title},~{::link})">
+    <title>二维码登录</title>
+</head>
+<!-- 自定义 页面 Styel -->
+<style>
+    .qrcode_top {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .qrcode_top .tab-content-details {
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    #login_container iframe {
+        padding-left: 60px;
+        padding-right: 10px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .show_info {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+</style>
+
+
+<body class="darklayout">
+
+<div class="admintab-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 qrcode_top">
+                <div class="tab-content-details shadow-reset">
+                    <h2>使用方式</h2>
+                    <p>1 . 该页面模拟了调用第三方认证的相关案例</p>
+                    <p>2 . 调用流程为 : </p>
+                    <p> --- 获取配置的第三方信息AppId , Secret</p>
+                    <p> --- 调用第三方接口完成相关认证</p>
+                    <p> --- 返回认证信息</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="admintab-wrap mg-b-40">
+                    <ul class="nav nav-tabs custom-menu-wrap custon-tab-menu-style1">
+                        <li class=""><a data-toggle="tab" href="#DintTalkCode" aria-expanded="false"
+                                        onclick="dingtalkCode.start()"><span
+                                class="adminpro-icon adminpro-analytics tab-custon-ic"></span>钉钉扫码</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="#TabDetails" aria-expanded="false"><span
+                                class="adminpro-icon adminpro-analytics-arrow tab-custon-ic"></span>Tab Details</a>
+                        </li>
+                        <li class="active"><a data-toggle="tab" href="#TabPlan" aria-expanded="true"><span
+                                class="adminpro-icon adminpro-analytics-bridge tab-custon-ic"></span>Tab Plan</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="DintTalkCode" class="tab-pane animated flipInX custon-tab-style1">
+
+                            <div class="col-lg-12">
+                                <!-- Ding Talk QRCode OAuth -->
+                                <div id="login_container" class="col-lg-3"></div>
+                                <div class="show_info col-lg-9">
+                                    <p>1 查询后台第三方信息 . 通过信息生成二维码</p>
+                                    <p>2 使用时扫描二维码</p>
+                                    <p>3 生成用户信息</p>
+                                    <p>----------</p>
+                                    <p>注意 : </p>
+                                    <p>1 需要完善表中数据</p>
+                                </div>
+                            </div>
+
+                            <!-- Ding Talk Script Start-->
+                            <script src="https://g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js"></script>
+                            <script>
+                                var redirect = "http://127.0.0.1:8087/user/test/dingding";
+                                var appid = "dingoams2oq4puhmcv6n6u";
+                                var goto = encodeURIComponent("https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid=" + appid + "&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=" + redirect);
+
+
+                                if (typeof window.addEventListener != 'undefined') {
+                                    window.addEventListener('message', handleMessage, false);
+                                } else if (typeof window.attachEvent != 'undefined') {
+                                    window.attachEvent('onmessage', handleMessage);
+                                }
+
+                                var handleMessage = function (event) {
+                                    var origin = event.origin;
+                                    if (origin == "https://login.dingtalk.com") { //判断是否来自ddLogin扫码事件。
+                                        var loginTmpCode = event.data;
+                                        dingtalkCode.getUserInfo(loginTmpCode);
+                                    }
+                                };
+
+                                var dingtalkCode = {
+                                    start: function () {
+                                        console.log("初始化Dingtalk 二维码");
+                                        var obj = DDLogin({
+                                            id: "login_container",//这里需要你在自己的页面定义一个HTML标签并设置id，例如<div id="login_container"></div>或<span id="login_container"></span>
+                                            goto: goto, //请参考注释里的方式
+                                            style: "border:none;background-color:#FFFFFF;",
+                                            width: "365",
+                                            height: "400"
+                                        });
+                                    },
+                                    getUserInfo: function (loginTmpCode) {
+                                        var data = {"tmp_auth_code": loginTmpCode};
+                                        var urlCode = "https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid=" + appid +
+                                            "&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=" + redirect + "test" + "&loginTmpCode=" + loginTmpCode;
+                                        window.location.href = urlCode;
+                                    }
+                                }
+
+
+                            </script>
+                            <!-- Ding Talk Script End-->
+
+                            <!-- show DingTalk UserInfo Start -->
+                            <div id="dingtalk_userinfo" class="project-details-wrap shadow-reset">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Status:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="btn-group project-list-ad">
+                                                        <button class="btn btn-white btn-xs">Active</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Created by:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-dt">
+                                                        <span>Lorem Khanna</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Messages:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-dt">
+                                                        <span>254</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Client:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-dt">
+                                                        <a href="#">Uttara It Park</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Version:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-dt">
+                                                        <span>v2.5.1</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Last Updated:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-dt">
+                                                        <span>15.08.2018 13:15:55</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Created:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-dt">
+                                                        <span>12.07.2018 25:56:52</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Email:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-dt">
+                                                        <span>Admin@SRTtheme.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Phone:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-dt">
+                                                        <span>01962067309</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-details-mg">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="project-details-st">
+                                                        <span><strong>Participants:</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="project-details-img">
+                                                        <a href="#"><img src="img/notification/1.jpg" alt="">
+                                                        </a>
+                                                        <a href="#"><img src="img/notification/2.jpg" alt="">
+                                                        </a>
+                                                        <a href="#"><img src="img/notification/3.jpg" alt="">
+                                                        </a>
+                                                        <a href="#"><img src="img/notification/4.jpg" alt="">
+                                                        </a>
+                                                        <a href="#"><img src="img/notification/5.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- show DingTalk UserInfo End -->
+
+                        </div>
+                        <div id="TabDetails" class="tab-pane animated flipInX custon-tab-style1">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.</p>
+                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially unchanged.</p>
+                        </div>
+                        <div id="TabPlan" class="tab-pane animated flipInX custon-tab-style1 active">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.</p>
+                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries. </p>
+                            <p>the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div th:replace="common/commonJS::common_js(~{::script})"></div>
+</body>
+
+</html>

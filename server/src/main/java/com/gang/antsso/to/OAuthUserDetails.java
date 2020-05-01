@@ -2,7 +2,7 @@ package com.gang.antsso.to;
 
 import com.gang.antsso.auth.api.to.AbstractUserDetails;
 import com.gang.antsso.auth.api.to.UserInfo;
-import com.gang.antsso.auth.api.to.UserRoles;
+import com.gang.antsso.auth.api.to.UserRolesTO;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -74,12 +74,12 @@ public class OAuthUserDetails extends AbstractUserDetails<GrantedAuthority> impl
     }
 
     @Override
-    public List<UserRoles> changeRoles(List<GrantedAuthority> authRoles) {
+    public List<UserRolesTO> changeRoles(List<GrantedAuthority> authRoles) {
         logger.info("------> rhis is in roles change <-------");
-        List<UserRoles> list = new LinkedList<>();
+        List<UserRolesTO> list = new LinkedList<>();
         authRoles.stream().forEach(item -> {
-            UserRoles userRoles = new UserRoles("1", item.getAuthority());
-            list.add(userRoles);
+            UserRolesTO userRolesTO = new UserRolesTO("1", item.getAuthority());
+            list.add(userRolesTO);
         });
 
         return list;

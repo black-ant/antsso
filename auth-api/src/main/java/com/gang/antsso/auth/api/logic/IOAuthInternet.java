@@ -1,8 +1,7 @@
 package com.gang.antsso.auth.api.logic;
 
-import com.gang.antsso.auth.api.entity.InternetRequest;
-import com.gang.antsso.auth.api.entity.InternetResponse;
-import com.gang.common.lib.to.ResponseModel;
+import com.gang.antsso.auth.api.to.InternetRequestTO;
+import com.gang.antsso.auth.api.to.InternetResponseTO;
 
 /**
  * @Classname OAuthInternet
@@ -12,5 +11,5 @@ import com.gang.common.lib.to.ResponseModel;
  */
 public interface IOAuthInternet {
 
-    public InternetResponse execute(InternetRequest request);
+    InternetResponseTO execute(InternetRequestTO request);
 }

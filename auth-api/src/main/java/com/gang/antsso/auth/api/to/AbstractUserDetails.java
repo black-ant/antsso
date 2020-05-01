@@ -11,9 +11,9 @@ import java.util.List;
 
 public abstract class AbstractUserDetails<T> extends UserInfo {
 
-    public List<UserRoles> rolesList;
+    public List<UserRolesTO> rolesList;
 
-    public abstract List<UserRoles> changeRoles(List<T> t);
+    public abstract List<UserRolesTO> changeRoles(List<T> t);
 
 
 }

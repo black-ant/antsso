@@ -1,10 +1,9 @@
 package com.gang.antsso.strategy;
 
-import com.gang.antsso.auth.api.entity.UserInfoSearch;
-import com.gang.antsso.auth.api.logic.OAuthUserInfo;
+import com.gang.antsso.auth.api.to.UserInfoSearchTO;
+import com.gang.antsso.auth.api.logic.IOAuthUserInfo;
 import com.gang.antsso.datacenter.entity.SsoAppTypeEntity;
 import com.gang.antsso.datacenter.repository.SsoAppTypeRepository;
-import com.gang.antsso.ext.database.DataBaseLogic;
 import com.gang.antsso.auth.api.to.UserInfo;
 import com.gang.common.lib.utils.ReflectionUtils;
 import org.slf4j.Logger;
@@ -30,22 +29,20 @@ public class DataBaseStrategy implements IStrategyLogic {
     private SsoAppTypeRepository appTypeRepository;
 
     @Override
-    public UserInfo getUserInfo(UserInfoSearch userInfoSearch) {
+    public UserInfo searchUserInfo(UserInfoSearchTO userInfoSearchTO) {
         try {
 
-            SsoAppTypeEntity appType = appTypeRepository.findByTypeCode(userInfoSearch.getAuthType());
+            SsoAppTypeEntity appType = appTypeRepository.findByTypeCode(userInfoSearchTO.getAuthType());
 
             logger.info("------> this appType is :{} <-------", appType.getTypeName());
 
-            OAuthUserInfo oAuthUserInfo = reflectionUtils.classLoadReflect(appType.getTypeClass());
+            IOAuthUserInfo oAuthUserInfo = reflectionUtils.classLoadReflect(appType.getTypeClass());
 
-            return oAuthUserInfo.getUserInfo(userInfoSearch);
+            return oAuthUserInfo.searchUserInfo(userInfoSearchTO);
 
         } catch (Exception e) {
             logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
         }
         return null;
-
     }
-
 }
