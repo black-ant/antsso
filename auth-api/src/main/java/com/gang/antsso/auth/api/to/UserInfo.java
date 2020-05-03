@@ -1,6 +1,9 @@
 package com.gang.antsso.auth.api.to;
 
+
 import lombok.Data;
+
+import java.util.List;
 
 /**
  * @Classname UserInfo
@@ -11,11 +14,16 @@ import lombok.Data;
 @Data
 public class UserInfo {
 
+    protected Boolean checkStatus;
+    protected String checkInfo;
+
     protected String userid;
     protected String username;
 
     protected String password;
     protected String token;
+
+    protected List<RoleInfo> list;
 
     public UserInfo() {
     }

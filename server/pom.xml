@@ -16,18 +16,21 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antsso-common-lib</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
 
+        <!-- Spring -->
         <dependency>
-            <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antsso-datacenter</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
-        <!-- DAO -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
@@ -36,33 +39,46 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-security</artifactId>
         </dependency>
+
+        <!-- DAO Start -->
+        <dependency>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-datacenter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- DAO End-->
+
+        <!-- Ant SSO -->
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-auth-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!-- ext -->
         <dependency>
             <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antsso-ext-database</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-ext-easy</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-ext-vcode</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antisso-ext-dingtalk</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- Ext End -->
+
+        <!-- Common Start -->
+        <dependency>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-common-swagger</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-common-lib</artifactId>
+        </dependency>
+        <!-- Common End -->
     </dependencies>
 
     <dependencyManagement>

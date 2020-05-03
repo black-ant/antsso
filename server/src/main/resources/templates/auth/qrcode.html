@@ -85,16 +85,9 @@
                             <!-- Ding Talk Script Start-->
                             <script src="https://g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js"></script>
                             <script>
-                                var redirect = "http://127.0.0.1:8087/user/test/dingding";
+                                var redirect = "http://127.0.0.1:8089/view/internet/unauth/user/dingtalk";
                                 var appid = "dingoams2oq4puhmcv6n6u";
                                 var goto = encodeURIComponent("https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid=" + appid + "&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=" + redirect);
-
-
-                                if (typeof window.addEventListener != 'undefined') {
-                                    window.addEventListener('message', handleMessage, false);
-                                } else if (typeof window.attachEvent != 'undefined') {
-                                    window.attachEvent('onmessage', handleMessage);
-                                }
 
                                 var handleMessage = function (event) {
                                     var origin = event.origin;
@@ -103,6 +96,13 @@
                                         dingtalkCode.getUserInfo(loginTmpCode);
                                     }
                                 };
+
+                                if (typeof window.addEventListener != 'undefined') {
+                                    window.addEventListener('message', handleMessage, false);
+                                } else if (typeof window.attachEvent != 'undefined') {
+                                    window.attachEvent('onmessage', handleMessage);
+                                }
+
 
                                 var dingtalkCode = {
                                     start: function () {

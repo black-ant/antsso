@@ -13,29 +13,27 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antsso-common-lib</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-common-cache</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-common-lib</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-common-sdk-msg</artifactId>
+        </dependency>
+
+
+        <!-- Ant Jar -->
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-auth-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gang</groupId>
-            <artifactId>com-gang-common-msg-email</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gang</groupId>
-            <artifactId>com-gang-common-cache</artifactId>
-            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-datacenter</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

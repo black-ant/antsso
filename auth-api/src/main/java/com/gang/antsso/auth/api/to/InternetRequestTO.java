@@ -2,6 +2,7 @@ package com.gang.antsso.auth.api.to;
 
 import com.gang.antsso.auth.api.type.InternetType;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -19,6 +20,16 @@ public class InternetRequestTO {
     private String info;
 
     private Map<String, Object> params;
+
+    public InternetRequestTO addParam(String key, String value) {
+        params = params == null ? new HashMap<>() : params;
+        params.put(key, value);
+        return this;
+    }
+
+    public String backStringParams(String key) {
+        return params == null ? null : String.valueOf(params.get(key));
+    }
 
     public InternetType getType() {
         return type;

@@ -6,7 +6,7 @@ import com.gang.antsso.auth.api.to.OAuthExtSettingTO;
 import com.gang.antsso.auth.api.type.InternetType;
 import com.gang.antsso.controller.InternetController;
 import com.gang.antsso.datacenter.entity.SsoAppSettingEntity;
-import com.gang.antsso.dingtalk.service.DingTalkAuthService;
+import com.gang.antsso.dingtalk.service.DingTalkAuthServiceHandler;
 import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
 
 /**
  * @Classname InternetView
@@ -33,7 +32,7 @@ public class InternetView extends InternetController {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    private DingTalkAuthService dingTalkAuthService;
+    private DingTalkAuthServiceHandler dingTalkAuthService;
 
     @GetMapping("test")
     public ModelAndView internetTest() {
@@ -76,7 +75,7 @@ public class InternetView extends InternetController {
             oAuthExtSettingTO.addExtMap("code", servletRequest.getParameterMap().get("code")[0]);
 
             requestTO.setoAuthExtSettingTO(oAuthExtSettingTO);
-            requestTO.setType(InternetType.RQCODE);
+            requestTO.setType(InternetType.RQ_CODE);
 
             dingTalkAuthService.execute(requestTO);
         } catch (Exception e) {

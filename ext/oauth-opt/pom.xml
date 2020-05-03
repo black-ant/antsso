@@ -15,7 +15,6 @@
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-auth-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

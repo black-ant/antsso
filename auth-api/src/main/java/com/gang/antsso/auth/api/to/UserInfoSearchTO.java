@@ -19,12 +19,19 @@ public class UserInfoSearchTO<T> {
 
     private OAuthExtSettingTO oAuthExtSettingTO;
 
+    private UserCheckInfoTO userCheckInfoTO;
 
     public UserInfoSearchTO() {
     }
 
     public UserInfoSearchTO(T searchInfo) {
         this.searchInfo = searchInfo;
+    }
+
+    public UserInfoSearchTO addCheckInfo(String saltCode, String cipherCode) {
+        UserCheckInfoTO checkInfoTO = new UserCheckInfoTO(saltCode, cipherCode);
+        this.setUserCheckInfoTO(checkInfoTO);
+        return this;
     }
 
     public UserInfoSearchTO setType(AntAuthType antAuthType) {
