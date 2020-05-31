@@ -32,10 +32,25 @@
         <java.version>1.8</java.version>
 
         <mysql.connector.version>5.1.46</mysql.connector.version>
+
+        <spring.auth.verison>2.1.3.RELEASE</spring.auth.verison>
+
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Security -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-oauth2</artifactId>
+                <version>${spring.auth.verison}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-security</artifactId>
+                <version>${spring.auth.verison}</version>
+            </dependency>
+
 
             <!-- Common Start-->
             <dependency>
@@ -73,7 +88,7 @@
             </dependency>
             <dependency>
                 <groupId>com.gang.antsso</groupId>
-                <artifactId>com-gang-antsso-ext-easy</artifactId>
+                <artifactId>com-gang-antsso-ext-database</artifactId>
                 <version>${ant.version}</version>
             </dependency>
             <dependency>
@@ -94,6 +109,18 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <scope>runtime</scope>
                 <version>${mysql.connector.version}</version>
+            </dependency>
+
+            <!-- Out Common -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.68</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.9</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

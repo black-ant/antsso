@@ -9,6 +9,8 @@ import com.gang.antsso.logic.auth.manager.OAuthSuccessService;
 import com.gang.antsso.logic.auth.provide.OAuthQRCodeAuthenticationProvide;
 import com.gang.antsso.logic.auth.provide.OAuthUsernamePasswordAuthenticationProvide;
 import com.gang.antsso.logic.auth.provide.OAuthVCodeAuthenticationProvide;
+import com.gang.antsso.support.filter.DatabaseAuthenticationFilter;
+import com.gang.antsso.support.provider.DatabaseAuthenticationProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,7 +59,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth
                 .authenticationProvider(oAuthQRCodeAuthenticationProvider())
                 .authenticationProvider(usernamePasswordAuthenticationProvider())
-                .authenticationProvider(oAuthVCodeAuthenticationProvider());
+                .authenticationProvider(oAuthVCodeAuthenticationProvider())
+                .authenticationProvider(getDatabaseAuthenticationProvider());
 
 
         //        //该方法用于用户认证，此处添加内存用户，并且指定了权限
@@ -72,6 +75,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // 添加过滤器流程
         http.addFilterBefore(usernamePasswordAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
         http.addFilterAfter(oAuthVCodeAuthenticationFilter(), AntUsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(getDatabaseAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 
         //此方法中进行了请求授权，用来规定对哪些请求进行拦截
         //其中：antMatchers--使用ant风格的路径匹配
@@ -130,8 +134,20 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
+    public DatabaseAuthenticationProvider getDatabaseAuthenticationProvider() {
+        return new DatabaseAuthenticationProvider();
+    }
+
+    @Bean
     public AntQRCodeAuthenticationFilter oAuthQRCodeAuthenticationFilter() {
         AntQRCodeAuthenticationFilter filter = new AntQRCodeAuthenticationFilter();
+        filter.setAuthenticationManager(authenticationManager);
+        return filter;
+    }
+
+    @Bean
+    public DatabaseAuthenticationFilter getDatabaseAuthenticationFilter() {
+        DatabaseAuthenticationFilter filter = new DatabaseAuthenticationFilter();
         filter.setAuthenticationManager(authenticationManager);
         return filter;
     }

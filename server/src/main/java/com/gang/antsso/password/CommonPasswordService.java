@@ -1,5 +1,6 @@
 package com.gang.antsso.password;
 
+import com.gang.antsso.auth.api.logic.IPasswordServicec;
 import org.springframework.stereotype.Component;
 
 /**

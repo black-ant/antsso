@@ -33,6 +33,22 @@
 
 </div>
 
+<div th:fragment="common_js_scrollUp(scripts)">
+    <!-- scrollUp JS
+        ============================================ -->
+    <script th:src="@{/js/skycons/skycons.min.js}"></script>
+    <script th:src="@{/js/skycons/skycons.active.js}"></script>
+</div>
+
+<div th:fragment="common_js_rounded-counter(scripts)">
+    <!-- rounded-counter JS
+        ============================================ -->
+    <script th:src="@{/js/rounded-counter/jquery.countdown.min.js}"></script>
+    <script th:src="@{/js/rounded-counter/jquery.knob.js}"></script>
+    <script th:src="@{/js/rounded-counter/jquery.appear.js}"></script>
+    <script th:src="@{/js/rounded-counter/knob-active.js}"></script>
+</div>
+
 <div th:fragment="common_js_ant(scripts)">
     <!-- flot JS
     ============================================ -->
@@ -63,7 +79,17 @@
     <script th:src="@{/js/data-table/colResizable-1.5.source.js}"></script>
     <script th:src="@{/js/data-table/bootstrap-table-export.js}"></script>
 </div>
-
+<div th:fragment="common_js_edittable(scripts)">
+    <!--  editable JS
+        ============================================ -->
+    <script th:src="@{/js/jquery.mockjax.js}"></script>
+    <script th:src="@{/js/mock-active.js}"></script>
+    <script th:src="@{/js/select2.js}"></script>
+    <script th:src="@{/js/moment.min.js}"></script>
+    <script th:src="@{/js/bootstrap-datetimepicker.js}"></script>
+    <script th:src="@{/js/bootstrap-editable.js}"></script>
+    <script th:src="@{/js/xediable-active.js}"></script>
+</div>
 <div th:fragment="common_js_counterup(scripts)">
     <!-- counterup JS
         ============================================ -->
@@ -93,5 +119,20 @@
     <script th:src="@{/js/sparkline/jquery.sparkline.min.js}"></script>
     <script th:src="@{/js/sparkline/sparkline-active.js}"></script>
 </div>
+
+
+<div th:fragment="common_js_Chat(scripts)">
+    <!--  Chat JS
+    ============================================ -->
+    <script th:src="@{/js/chat-active/jquery.chat.js}"></script>
+</div>
+
+<div th:fragment="common_js_todo(scripts)">
+    <!--  todo JS
+        ============================================ -->
+    <script th:src="@{/js/todo/jquery.todo.js}"></script>
+</div>
+
+
 </html>
 

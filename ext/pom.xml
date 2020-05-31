@@ -17,10 +17,11 @@
         <module>ext-dingtalk</module>
         <module>ext-weibo</module>
 
-        <module>oauth-easy</module>
+        <module>oauth-database</module>
         <module>oauth-opt</module>
         <module>oauth-face</module>
         <module>oauth-code</module>
+        <module>antsso-support-database</module>
 
     </modules>
 

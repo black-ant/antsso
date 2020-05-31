@@ -1,4 +1,4 @@
-package com.gang.antsso.password;
+package com.gang.antsso.auth.api.logic;
 
 /**
  * @Classname IPasswordServicec

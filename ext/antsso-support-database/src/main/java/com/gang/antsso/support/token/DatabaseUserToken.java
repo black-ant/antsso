@@ -1,27 +1,30 @@
-package com.gang.antsso.logic.auth.token;
+package com.gang.antsso.support.token;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.SpringSecurityCoreVersion;
+import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 
 /**
- * @Classname AntVCodeAuthenticationToken
+ * @Classname DatabaseUserToken
  * @Description TODO
- * @Date 2020/5/2 12:53
+ * @Date 2020/5/31 18:48
  * @Created by zengzg
  */
-public class AntVCodeAuthenticationToken extends AbstractAuthenticationToken {
+public class DatabaseUserToken extends AbstractAuthenticationToken {
+
 
     private static final long serialVersionUID = SpringSecurityCoreVersion.SERIAL_VERSION_UID;
 
     private final Object principal;
     private String credentials;
     private String type;
+    private Collection<? extends GrantedAuthority> authorities;
 
-    public AntVCodeAuthenticationToken(Object principal, String credentials) {
+    public DatabaseUserToken(Object principal, String credentials) {
         super(null);
         this.principal = principal;
         this.credentials = credentials;
@@ -29,7 +32,7 @@ public class AntVCodeAuthenticationToken extends AbstractAuthenticationToken {
         setAuthenticated(false);
     }
 
-    public AntVCodeAuthenticationToken(Object principal, String credentials, String type) {
+    public DatabaseUserToken(Object principal, String credentials, String type) {
         super(null);
         this.principal = principal;
         this.credentials = credentials;
@@ -37,7 +40,14 @@ public class AntVCodeAuthenticationToken extends AbstractAuthenticationToken {
         setAuthenticated(false);
     }
 
-    public AntVCodeAuthenticationToken(Object principal, Collection<? extends GrantedAuthority> authorities) {
+    public DatabaseUserToken(Object principal, String credentials, Collection<? extends GrantedAuthority> authorities) {
+        super(authorities);
+        this.principal = principal;
+        this.credentials = credentials;
+        setAuthenticated(false);
+    }
+
+    public DatabaseUserToken(Object principal, Collection<? extends GrantedAuthority> authorities) {
         super(authorities);
         this.principal = principal;
         this.credentials = null;
@@ -62,11 +72,11 @@ public class AntVCodeAuthenticationToken extends AbstractAuthenticationToken {
 
     @Override
     public Object getCredentials() {
-        return this.credentials;
+        return credentials;
     }
 
     @Override
     public Object getPrincipal() {
-        return this.principal;
+        return principal;
     }
 }
