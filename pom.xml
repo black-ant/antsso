@@ -93,7 +93,12 @@
             </dependency>
             <dependency>
                 <groupId>com.gang.antsso</groupId>
-                <artifactId>com-gang-antsso-ext-vcode</artifactId>
+                <artifactId>com-gang-antsso-support-vcode</artifactId>
+                <version>${ant.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang.antsso</groupId>
+                <artifactId>com-gang-antsso-support-database</artifactId>
                 <version>${ant.version}</version>
             </dependency>
             <dependency>

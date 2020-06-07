@@ -1,5 +1,6 @@
 package com.gang.antsso.config;
 
+import com.gang.antsso.config.entity.LoginViewConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    private LoginViewEntity viewEntity;
+    private LoginViewConfiguration viewEntity;
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {

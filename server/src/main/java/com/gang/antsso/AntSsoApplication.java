@@ -13,8 +13,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Created by zengzg
  */
 @SpringBootApplication(scanBasePackages = "com.gang")
-@EnableSwagger2
 @EnableCaching
+@EnableSwagger2
 public class AntSsoApplication {
 
     public static void main(String[] args) {

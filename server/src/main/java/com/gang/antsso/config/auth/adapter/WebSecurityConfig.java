@@ -1,16 +1,13 @@
 package com.gang.antsso.config.auth.adapter;
 
-import com.gang.antsso.filter.AntQRCodeAuthenticationFilter;
+import com.gang.antsso.config.entity.AntSSOWebSecurityConfiguration;
 import com.gang.antsso.filter.AntUsernamePasswordAuthenticationFilter;
-import com.gang.antsso.filter.AntVCodeAuthenticationFilter;
 import com.gang.antsso.logic.auth.manager.OAuthFailureService;
 import com.gang.antsso.logic.auth.OAuthUserDetailsService;
 import com.gang.antsso.logic.auth.manager.OAuthSuccessService;
 import com.gang.antsso.logic.auth.provide.OAuthQRCodeAuthenticationProvide;
 import com.gang.antsso.logic.auth.provide.OAuthUsernamePasswordAuthenticationProvide;
-import com.gang.antsso.logic.auth.provide.OAuthVCodeAuthenticationProvide;
-import com.gang.antsso.support.filter.DatabaseAuthenticationFilter;
-import com.gang.antsso.support.provider.DatabaseAuthenticationProvider;
+import com.gang.common.lib.utils.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +19,9 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.util.CollectionUtils;
 
 /**
  * @Classname WebSecurityConfig
@@ -47,6 +46,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private AuthenticationManager authenticationManager;
 
+    @Autowired
+    private AntSSOWebSecurityConfiguration webSecurityConfiguration;
+
+    @Autowired
+    private ReflectionUtils reflectionUtils;
+
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
@@ -58,10 +63,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         auth
                 .authenticationProvider(oAuthQRCodeAuthenticationProvider())
-                .authenticationProvider(usernamePasswordAuthenticationProvider())
-                .authenticationProvider(oAuthVCodeAuthenticationProvider())
-                .authenticationProvider(getDatabaseAuthenticationProvider());
+                .authenticationProvider(usernamePasswordAuthenticationProvider());
 
+        injectWebConfig(auth);
 
         //        //该方法用于用户认证，此处添加内存用户，并且指定了权限
         //        logger.info("------> password :{} <-------", new BCryptPasswordEncoder().encode("123456"));
@@ -69,13 +73,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         // 添加过滤器流程
         http.addFilterBefore(usernamePasswordAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
-        http.addFilterAfter(oAuthVCodeAuthenticationFilter(), AntUsernamePasswordAuthenticationFilter.class);
-        http.addFilterBefore(getDatabaseAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+        injectWebConfig(http);
 
         //此方法中进行了请求授权，用来规定对哪些请求进行拦截
         //其中：antMatchers--使用ant风格的路径匹配
@@ -103,6 +107,40 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
+
+    /**
+     * 注入 Provide
+     *
+     * @param auth
+     */
+    public void injectWebConfig(AuthenticationManagerBuilder auth) {
+        if (webSecurityConfiguration != null && !CollectionUtils.isEmpty(webSecurityConfiguration.getSettingList())) {
+            webSecurityConfiguration.getSettingList().forEach(item -> {
+                auth.authenticationProvider(reflectionUtils.springClassLoad(item.getProvider()));
+            });
+        }
+        logger.info("------> provider 注入完成 <-------");
+    }
+
+
+    /**
+     * 注入 Filter
+     *
+     * @param http
+     */
+    public void injectWebConfig(HttpSecurity http) {
+        if (webSecurityConfiguration != null && !CollectionUtils.isEmpty(webSecurityConfiguration.getSettingList())) {
+            webSecurityConfiguration.getSettingList().forEach(item -> {
+                AbstractAuthenticationProcessingFilter filter = reflectionUtils.classLoadReflect(item.getFilter());
+                filter.setAuthenticationManager(authenticationManager);
+                http.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class
+                );
+            });
+        }
+        logger.info("------> provider 注入完成 <-------");
+    }
+
+
     /**
      * 设置不拦截
      *
@@ -129,39 +167,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public OAuthVCodeAuthenticationProvide oAuthVCodeAuthenticationProvider() {
-        return new OAuthVCodeAuthenticationProvide();
-    }
-
-    @Bean
-    public DatabaseAuthenticationProvider getDatabaseAuthenticationProvider() {
-        return new DatabaseAuthenticationProvider();
-    }
-
-    @Bean
-    public AntQRCodeAuthenticationFilter oAuthQRCodeAuthenticationFilter() {
-        AntQRCodeAuthenticationFilter filter = new AntQRCodeAuthenticationFilter();
-        filter.setAuthenticationManager(authenticationManager);
-        return filter;
-    }
-
-    @Bean
-    public DatabaseAuthenticationFilter getDatabaseAuthenticationFilter() {
-        DatabaseAuthenticationFilter filter = new DatabaseAuthenticationFilter();
-        filter.setAuthenticationManager(authenticationManager);
-        return filter;
-    }
-
-    @Bean
     public AntUsernamePasswordAuthenticationFilter usernamePasswordAuthenticationFilter() {
         AntUsernamePasswordAuthenticationFilter filter = new AntUsernamePasswordAuthenticationFilter();
-        filter.setAuthenticationManager(authenticationManager);
-        return filter;
-    }
-
-    @Bean
-    public AntVCodeAuthenticationFilter oAuthVCodeAuthenticationFilter() {
-        AntVCodeAuthenticationFilter filter = new AntVCodeAuthenticationFilter();
         filter.setAuthenticationManager(authenticationManager);
         return filter;
     }

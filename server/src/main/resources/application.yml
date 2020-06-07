@@ -44,6 +44,14 @@ ant:
       cache:
         type: redis
   sso:
+    auth:
+      settingList:
+        - filter: com.gang.antsso.support.filter.DatabaseAuthenticationFilter
+          provider: com.gang.antsso.support.provider.DatabaseAuthenticationProvider
+          token: com.gang.antsso.support.token.DatabaseUserToken
+        - filter: com.gang.antsso.support.filter.VCodeAuthenticationFilter
+          provider: com.gang.antsso.support.provider.VCodeAuthenticationProvider
+          token: com.gang.antsso.support.token.VCodeUserToken
     view:
       viewMap:
         login: login
