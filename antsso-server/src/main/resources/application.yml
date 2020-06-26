@@ -1,0 +1,59 @@
+server:
+  port: 8089
+gang:
+  common:
+    swagger:
+      basePackage: "com.gang"
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://127.0.0.1:3306/antsso?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    continue-on-error: true
+    sql-script-encoding: UTF-8
+    password: 123456
+    data-username: root
+    hikari:
+      maximum-pool-size: 15
+      minimum-idle: 5
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/antsso?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
+      username: root
+      password: 123456
+      allow-pool-suspension: true
+      auto-commit: true
+      idle-timeout: 300000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 300000
+      connection-test-query: SELECT 1
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  profiles:
+    active: application-vcode.yml
+  redis:
+    database: 8
+    host: 127.0.0.1
+    password: ''
+    port: 6379
+ant:
+  common:
+    config:
+      cache:
+        type: redis
+  sso:
+    auth:
+      settingList:
+        - filter: DatabaseAuthenticationFilter
+          provider: DatabaseAuthenticationProvider
+          token: DatabaseUserToken
+        - filter: VCodeAuthenticationFilter
+          provider: VCodeAuthenticationProvider
+          token: VCodeUserToken
+    view:
+      viewMap:
+        login: login
+        loginSms: login_sms
+        loginEmail: login_email
