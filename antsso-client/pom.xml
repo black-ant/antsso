@@ -12,7 +12,7 @@
     <artifactId>com-gang-antsso-client</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>com-gang-antsso-client-saml</module>
+        <module>client-saml</module>
         <module>client-oauth</module>
     </modules>
 

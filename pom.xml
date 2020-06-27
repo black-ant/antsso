@@ -87,12 +87,22 @@
             </dependency>
             <dependency>
                 <groupId>com.gang.antsso</groupId>
+                <artifactId>com-gang-antsso-web</artifactId>
+                <version>${ant.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang.antsso</groupId>
                 <artifactId>com-gang-antsso-auth-api</artifactId>
                 <version>${ant.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.gang.antsso</groupId>
-                <artifactId>com-gang-antsso-ext-database</artifactId>
+                <artifactId>com-gang-antsso-core</artifactId>
+                <version>${ant.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang.antsso</groupId>
+                <artifactId>com-gang-antsso-common</artifactId>
                 <version>${ant.version}</version>
             </dependency>
             <dependency>
@@ -107,7 +117,23 @@
             </dependency>
             <dependency>
                 <groupId>com.gang.antsso</groupId>
-                <artifactId>com-gang-antisso-ext-dingtalk</artifactId>
+                <artifactId>com-gang-antsso-support-dingtalk</artifactId>
+                <version>${ant.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang.antsso</groupId>
+                <artifactId>com-gang-antsso-support-wechat</artifactId>
+                <version>${ant.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.gang.antsso</groupId>
+                <artifactId>com-gang-antsso-support-saml-api</artifactId>
+                <version>${ant.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang.antsso</groupId>
+                <artifactId>com-gang-antsso-support-saml-idp</artifactId>
                 <version>${ant.version}</version>
             </dependency>
             <!--Ant Jar end -->

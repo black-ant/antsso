@@ -10,11 +10,11 @@
 <div class="wrapper-pro">
     <div class="left-sidebar-pro">
         <!-- Left-->
-        <div th:replace="common/commonLoginLeft::common_login_left(~{::name})"></div>
+        <div class=" mg-t-30" th:replace="common/commonLoginLeft::common_login_left(~{::name})"></div>
     </div>
     <div class="content-inner-all">
         <!-- login Start-->
-        <div class="login-form-area mg-t-30 mg-b-40">
+        <div class="login-form-area mg-b-40">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3"></div>
@@ -95,6 +95,7 @@
 </div>
 
 <div th:replace="common/commonJS::common_js(~{::script})"></div>
+<div th:replace="common/commonJS::common_js_ant(~{::script})"></div>
 </body>
 
 </html>

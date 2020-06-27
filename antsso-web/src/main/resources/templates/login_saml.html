@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/commonHead :: common_header(~{::title},~{::link})">
+    <title>设置</title>
+</head>
+
+<style>
+    .wrapper-pro {
+        color: white;
+    }
+
+    .row .get-button {
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        color: #fff;
+        background-color: #997f4b;
+        border-color: #816b3f;
+        width: 50%;
+        margin: 3em 25% 0 25%;
+        border: none;
+        font-weight: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+        padding: 13px 22px;
+        font-size: 12px;
+        line-height: 1.33;
+        border-radius: 0;
+        cursor: pointer;
+    }
+
+    .row input, textarea {
+        text-align: left;
+        vertical-align: middle;
+        color: black;
+        background-color: #fff;
+        border-color: #816b3f;
+        width: 50%;
+        margin: 3em 25% 0 25%;
+        border: none;
+        font-weight: normal;
+        letter-spacing: 1px;
+        transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+        padding: 13px 22px;
+        font-size: 12px;
+        line-height: 1.33;
+        border-radius: 0;
+    }
+
+    textarea {
+        height: 20em;
+    }
+
+    .admintab-wrap .nav-tabs {
+        margin-left: 25%;
+        width: 50%;
+        background-color: #997f4b;
+    }
+
+    .darklayout .nav-tabs > li.active > a, .darklayout .nav-tabs > li.active > a:focus, .darklayout .nav-tabs > li.active > a:hover {
+        background-color: #816b3f;
+        border: 1px solid #816b3f;
+        color: #fff;
+    }
+</style>
+
+<body class="darklayout">
+
+<div class="wrapper-pro">
+    <div class="left-sidebar-pro">
+        <!-- Left-->
+        <div th:replace="common/commonLoginLeft::common_login_left(~{::name})"></div>
+    </div>
+    <div class="content-inner-all">
+        <!-- login Start-->
+        <div class="login-form-area mg-b-40">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="TabProject" class="tab-pane animated flipInX custon-tab-style1 active">
+                        <div class="get-button" th:onclick="doGetWechat()">发起SAML认证请求</div>
+                        <textarea id="userinfo" th:value="'用户信息加载中...'"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login End-->
+    </div>
+</div>
+
+<div th:replace="common/commonJS::common_js(~{::script})"></div>
+<div th:replace="common/commonJS::common_js_ant(~{::script})"></div>
+
+<script>
+    function doGetWechat() {
+        antAjax.get("wechat/unauth/url", function (data) {
+            console.log(data);
+            $("#wechat-url").val(data.data);
+        });
+    }
+
+    function doLogin() {
+        var url = $("#wechat-url").val();
+        window.location.href = url;
+    }
+
+    function doGetWechatCode() {
+        antAjax.get("wechat/unauth/urlCode", function (data) {
+            console.log(data);
+            $("#wechatCode-url").val(data.data);
+        });
+    }
+
+    function doLoginCode() {
+        var url = $("#wechatCode-url").val();
+        window.location.href = url;
+    }
+</script>
+</body>
+
+</html>

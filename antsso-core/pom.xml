@@ -24,7 +24,6 @@
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-datacenter</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- DAO End-->
     </dependencies>

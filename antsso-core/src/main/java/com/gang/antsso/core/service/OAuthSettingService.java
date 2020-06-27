@@ -17,7 +17,6 @@ public class OAuthSettingService {
     @Autowired
     private SsoAppSettingRepository settingRepository;
 
-
     public SsoAppSettingEntity getSetting(String type) {
         return settingRepository.getBySettingTypeCode(type);
     }

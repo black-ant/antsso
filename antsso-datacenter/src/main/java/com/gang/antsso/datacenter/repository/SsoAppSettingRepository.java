@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SsoAppSettingRepository extends JpaRepository<SsoAppSettingEntity, String> {
 
-    public SsoAppSettingEntity getBySettingTypeCode(String settingType);
+    SsoAppSettingEntity getBySettingTypeCode(String settingType);
 
 }

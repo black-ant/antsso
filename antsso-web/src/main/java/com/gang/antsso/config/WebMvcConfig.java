@@ -24,6 +24,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
+
+
         registry.addViewController("/index").setViewName("index");
         registry.addViewController("/tologin").setViewName("login");
         registry.addViewController("/home").setViewName("home");
@@ -31,6 +33,11 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/admin").setViewName("admin");
         registry.addViewController("/admin2").setViewName("user");
 
+        // 登录跳转
+        registry.addViewController("/loginWechat").setViewName("login_wechat");
+        registry.addViewController("/loginVcode").setViewName("login_vcode");
+        registry.addViewController("/loginDingtalk").setViewName("login_dingtalk");
+        registry.addViewController("/loginSaml").setViewName("login_saml");
         if (viewEntity != null && viewEntity.getViewMap() != null) {
             viewEntity.getViewMap().keySet().forEach(item -> {
                 logger.info("------> add view :{} --{} <-------", item, viewEntity.getViewMap().get(item));

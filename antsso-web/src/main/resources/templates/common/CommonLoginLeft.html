@@ -2,24 +2,36 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <div th:fragment="common_login_left(name)">
     <nav id="sidebar">
-        <div class="left-custom-menu-adp-wrap">
+        <div class="left-custom-menu-adp-wrap mg-t-30">
             <ul class="nav navbar-nav left-sidebar-menu-pro">
-                <li class="nav-item">
+                <li class="nav-item mg-t-30">
                     <a th:href="@{/login}">
                         <i class="fa big-icon fa-home"></i>
                         <span class="mini-dn">账号密码登录</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mg-t-30">
                     <a th:href="@{/loginSms}">
                         <i class="fa big-icon fa-home"></i>
                         <span class="mini-dn">短信验证码登录</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mg-t-30">
                     <a th:href="@{/loginEmail}">
                         <i class="fa big-icon fa-home"></i>
                         <span class="mini-dn">邮箱验证码登录</span>
+                    </a>
+                </li>
+                <li class="nav-item mg-t-30">
+                    <a th:href="@{/loginWechat}">
+                        <i class="fa big-icon fa-home"></i>
+                        <span class="mini-dn">钉钉登录系列</span>
+                    </a>
+                </li>
+                <li class="nav-item mg-t-30">
+                    <a th:href="@{/loginSaml}">
+                        <i class="fa big-icon fa-home"></i>
+                        <span class="mini-dn">SAML登录</span>
                     </a>
                 </li>
             </ul>

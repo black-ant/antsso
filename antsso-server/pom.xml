@@ -24,25 +24,29 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-security</artifactId>
         </dependency>
 
-        <!--        &lt;!&ndash; DAO Start &ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.gang.antsso</groupId>-->
-        <!--            <artifactId>com-gang-antsso-datacenter</artifactId>-->
-        <!--            <version>1.0-SNAPSHOT</version>-->
-        <!--        </dependency>-->
-        <!--        &lt;!&ndash; DAO End&ndash;&gt;-->
+        <!-- Web -->
+        <dependency>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-web</artifactId>
+        </dependency>
+        <!-- Web End -->
+
+        <!-- Security Support -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+
+        <!-- DAO Start -->
+        <dependency>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-datacenter</artifactId>
+        </dependency>
+        <!-- DAO End-->
 
         <!-- Ant SSO -->
         <dependency>
@@ -50,7 +54,7 @@
             <artifactId>com-gang-antsso-auth-api</artifactId>
         </dependency>
 
-        <!-- ext -->
+        <!-- Support -->
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-support-vcode</artifactId>
@@ -58,14 +62,18 @@
         </dependency>
         <dependency>
             <groupId>com.gang.antsso</groupId>
-            <artifactId>com-gang-antisso-ext-dingtalk</artifactId>
+            <artifactId>com-gang-antsso-support-dingtalk</artifactId>
         </dependency>
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-support-database</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gang.antsso</groupId>
+            <artifactId>com-gang-antsso-support-wechat</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!-- Ext End -->
+        <!-- Support End -->
 
         <!-- Common Start -->
         <dependency>
@@ -75,7 +83,6 @@
         <dependency>
             <groupId>com.gang.antsso</groupId>
             <artifactId>com-gang-antsso-core</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- Common End -->
     </dependencies>

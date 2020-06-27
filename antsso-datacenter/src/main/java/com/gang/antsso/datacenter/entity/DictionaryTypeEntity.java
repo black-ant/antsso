@@ -22,7 +22,7 @@ public class DictionaryTypeEntity extends AbstractAntSsoEntity {
     private String dType;
     private String dDesc;
     private String dSort;
-    private Byte dStatus;
+    private Boolean dStatus;
     private String dParent;
 
     @Id
@@ -87,11 +87,11 @@ public class DictionaryTypeEntity extends AbstractAntSsoEntity {
 
     @Basic
     @Column(name = "d_status", nullable = true)
-    public Byte getdStatus() {
+    public Boolean getdStatus() {
         return dStatus;
     }
 
-    public void setdStatus(Byte dStatus) {
+    public void setdStatus(Boolean dStatus) {
         this.dStatus = dStatus;
     }
 

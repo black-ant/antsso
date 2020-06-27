@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Timestamp;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Objects;
 
 /**
@@ -18,6 +19,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "dictionary_info", schema = "antsso", catalog = "")
 public class DictionaryInfoEntity extends AbstractAntSsoEntity {
+
     private String id;
     private String dtCode;
     private String dtName;
@@ -25,12 +27,12 @@ public class DictionaryInfoEntity extends AbstractAntSsoEntity {
     private String dtValue;
     private byte[] dtAttachment;
     private String dtDesc;
-    private Object dtInfo;
-    private Byte dtStatus;
+    //    private String dtInfo;
+    private Boolean dtStatus;
     private String dtPermission;
     private String dtType;
     private String dtSort;
-    private Timestamp dtCreateDate;
+    private Date dtCreateDate;
     private String dtCreateUser;
     private String dId;
     private String dCode;
@@ -105,23 +107,23 @@ public class DictionaryInfoEntity extends AbstractAntSsoEntity {
         this.dtDesc = dtDesc;
     }
 
-    @Basic
-    @Column(name = "dt_info", nullable = true)
-    public Object getDtInfo() {
-        return dtInfo;
-    }
-
-    public void setDtInfo(Object dtInfo) {
-        this.dtInfo = dtInfo;
-    }
+    //    @Basic
+    //    @Column(name = "dt_info", nullable = true)
+    //    public Object getDtInfo() {
+    //        return dtInfo;
+    //    }
+    //
+    //    public void setDtInfo(String dtInfo) {
+    //        this.dtInfo = dtInfo;
+    //    }
 
     @Basic
     @Column(name = "dt_status", nullable = true)
-    public Byte getDtStatus() {
+    public Boolean getDtStatus() {
         return dtStatus;
     }
 
-    public void setDtStatus(Byte dtStatus) {
+    public void setDtStatus(Boolean dtStatus) {
         this.dtStatus = dtStatus;
     }
 
@@ -157,11 +159,11 @@ public class DictionaryInfoEntity extends AbstractAntSsoEntity {
 
     @Basic
     @Column(name = "dt_create_date", nullable = true)
-    public Timestamp getDtCreateDate() {
+    public Date getDtCreateDate() {
         return dtCreateDate;
     }
 
-    public void setDtCreateDate(Timestamp dtCreateDate) {
+    public void setDtCreateDate(Date dtCreateDate) {
         this.dtCreateDate = dtCreateDate;
     }
 
@@ -207,7 +209,7 @@ public class DictionaryInfoEntity extends AbstractAntSsoEntity {
                 Objects.equals(dtValue, that.dtValue) &&
                 Arrays.equals(dtAttachment, that.dtAttachment) &&
                 Objects.equals(dtDesc, that.dtDesc) &&
-                Objects.equals(dtInfo, that.dtInfo) &&
+                //                Objects.equals(dtInfo, that.dtInfo) &&
                 Objects.equals(dtStatus, that.dtStatus) &&
                 Objects.equals(dtPermission, that.dtPermission) &&
                 Objects.equals(dtType, that.dtType) &&
@@ -220,7 +222,7 @@ public class DictionaryInfoEntity extends AbstractAntSsoEntity {
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(id, dtCode, dtName, dtAlias, dtValue, dtDesc, dtInfo, dtStatus, dtPermission, dtType, dtSort, dtCreateDate, dtCreateUser,
+        int result = Objects.hash(id, dtCode, dtName, dtAlias, dtValue, dtDesc, dtStatus, dtPermission, dtType, dtSort, dtCreateDate, dtCreateUser,
                 dId, dCode);
         result = 31 * result + Arrays.hashCode(dtAttachment);
         return result;

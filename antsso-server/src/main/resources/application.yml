@@ -1,5 +1,7 @@
 server:
   port: 8089
+  servlet:
+    context-path: /sso
 gang:
   common:
     swagger:
@@ -46,12 +48,12 @@ ant:
   sso:
     auth:
       settingList:
-        - filter: DatabaseAuthenticationFilter
-          provider: DatabaseAuthenticationProvider
-          token: DatabaseUserToken
-        - filter: VCodeAuthenticationFilter
-          provider: VCodeAuthenticationProvider
-          token: VCodeUserToken
+        - filter: com.gang.antsso.database.filter.DatabaseAuthenticationFilter
+          provider: com.gang.antsso.database.provider.DatabaseAuthenticationProvider
+          token: com.gang.antsso.database.token.DatabaseUserToken
+        - filter: com.gang.antsso.wechat.filter.WechatAuthenticationFilter
+          provider: com.gang.antsso.wechat.provider.WechatAuthenticationProvider
+          token: com.gang.antsso.wechat.token.WehatUserToken
     view:
       viewMap:
         login: login

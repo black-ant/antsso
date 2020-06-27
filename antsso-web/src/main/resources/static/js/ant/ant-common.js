@@ -1,10 +1,10 @@
-var baseUrl = "http://127.0.0.1:8089/";
+var rootUrl = "http://127.0.0.1:8089/sso/";
 var antAjax = {
     post: function (url, data, successFun) {
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: url,
+            url: rootUrl + url,
             contentType: "application/json",
             data: JSON.stringify(data),
             success: successFun
@@ -14,7 +14,7 @@ var antAjax = {
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: url,
+            url: rootUrl + url,
             contentType: "application/json",
             success: successFun
         });
