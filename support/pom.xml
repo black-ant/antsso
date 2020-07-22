@@ -26,6 +26,7 @@
         <module>antsso-support-saml-api</module>
         <module>antsso-support-saml-idp</module>
         <module>antsso-support-saml-sp</module>
+        <module>com-gang-antsso-support-ltpa</module>
 
     </modules>
 
