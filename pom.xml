@@ -17,7 +17,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>auth-api</module>
+        <module>antsso-api</module>
         <module>antsso-support</module>
         <module>antsso-server</module>
         <module>antsso-datacenter</module>
