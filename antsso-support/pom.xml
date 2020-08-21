@@ -23,13 +23,14 @@
         <module>antsso-support-vcode</module>
         <module>antsso-support-dingtalk</module>
         <module>antsso-support-wechat</module>
-        <module>antsso-support-saml-api</module>
-        <module>antsso-support-saml-idp</module>
-        <module>antsso-support-saml-sp</module>
+        <!--        <module>antsso-support-saml-api</module>-->
+        <!--        <module>antsso-support-saml-idp</module>-->
+        <!--        <module>antsso-support-saml-sp</module>-->
         <module>antsso-support-ltpa</module>
         <module>antsso-support-ldap</module>
         <module>antsso-support-voice</module>
         <module>antsso-support-face</module>
+        <module>antsso-support-cas</module>
 
     </modules>
 

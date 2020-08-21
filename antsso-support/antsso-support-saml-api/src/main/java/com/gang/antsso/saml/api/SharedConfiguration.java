@@ -78,6 +78,6 @@ public abstract class SharedConfiguration {
 
     public void setSignatureAlgorithm(String signatureAlgorithm) {
         this.signatureAlgorithm = signatureAlgorithm;
-        BasicSecurityConfiguration.class.cast(Configuration.getGlobalSecurityConfiguration()).registerSignatureAlgorithmURI("RSA", signatureAlgorithm);
+        //        BasicSecurityConfiguration.class.cast(Configuration.getGlobalSecurityConfiguration()).registerSignatureAlgorithmURI("RSA", signatureAlgorithm);
     }
 }
