@@ -31,6 +31,8 @@
         <module>antsso-support-voice</module>
         <module>antsso-support-face</module>
         <module>antsso-support-cas</module>
+        <module>antsso-support-weibo</module>
+        <module>antsso-support-otp</module>
 
     </modules>
 

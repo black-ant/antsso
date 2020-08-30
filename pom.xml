@@ -26,6 +26,8 @@
         <module>antsso-core</module>
         <module>antsso-web</module>
         <module>antsso-plugin</module>
+        <module>antsso-datasource</module>
+        <module>antsso-protocal</module>
     </modules>
 
 
