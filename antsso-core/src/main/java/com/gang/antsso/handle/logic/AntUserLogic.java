@@ -1,4 +1,4 @@
-package com.gang.antsso.core.logic;
+package com.gang.antsso.handle.logic;
 
 import com.gang.antsso.datacenter.entity.SsoUserEntity;
 import com.gang.antsso.datacenter.repository.UserRepository;

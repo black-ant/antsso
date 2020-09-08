@@ -12,7 +12,7 @@
  */
 
 
-package com.gang.antsso.core.logic;
+package com.gang.antsso.handle.logic;
 
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.converter.GenericConverter;

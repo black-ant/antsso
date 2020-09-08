@@ -17,6 +17,7 @@
         <module>antsso-plugin-cros</module>
         <module>antsso-plugin-mfa</module>
         <module>antsso-plugin-cache</module>
+        <module>ansso-plugin-aspect</module>
     </modules>
 
 

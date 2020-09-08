@@ -1,5 +1,6 @@
 package com.gang.antsso.database.provider;
 
+import com.alibaba.fastjson.JSONObject;
 import com.gang.antsso.auth.api.config.AlgorithmConfig;
 import com.gang.antsso.auth.api.config.AntSSOConfiguration;
 import com.gang.antsso.auth.api.to.UserInfo;
@@ -7,6 +8,8 @@ import com.gang.antsso.auth.api.to.UserInfoSearchTO;
 import com.gang.antsso.auth.api.utils.PwdUtils;
 import com.gang.antsso.database.service.UserInfoService;
 import com.gang.antsso.database.token.DatabaseUserToken;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -30,6 +33,8 @@ import java.util.Set;
 @Component
 public class DatabaseAuthenticationProvider implements AuthenticationProvider {
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     private UserInfoService userInfoService;
 
@@ -39,6 +44,7 @@ public class DatabaseAuthenticationProvider implements AuthenticationProvider {
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 
+        logger.info("------> auth database <-------");
         String username = (authentication.getPrincipal() == null)
                 ? "NONE_PROVIDED" : String.valueOf(authentication.getPrincipal());
         String password = (String) authentication.getCredentials();
@@ -65,6 +71,7 @@ public class DatabaseAuthenticationProvider implements AuthenticationProvider {
                 listUserGrantedAuthorities(user.getUserid()));
 
         result.setDetails(authentication.getDetails());
+        logger.info("------> auth database result :{} <-------", JSONObject.toJSONString(result));
         return result;
     }
 

@@ -1,4 +1,4 @@
-package com.gang.antsso.core.logic;
+package com.gang.antsso.handle.logic;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

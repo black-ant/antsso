@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.gang.antsso.auth.api.to.InternetRequestTO;
 import com.gang.antsso.auth.api.to.OAuthExtSettingTO;
 import com.gang.antsso.auth.api.type.InternetType;
-import com.gang.antsso.core.service.OAuthSettingService;
+import com.gang.antsso.handle.service.OAuthSettingService;
 import com.gang.antsso.datacenter.entity.SsoAppSettingEntity;
 import com.gang.antsso.dingtalk.service.DingTalkAuthServiceHandler;
 import org.slf4j.Logger;

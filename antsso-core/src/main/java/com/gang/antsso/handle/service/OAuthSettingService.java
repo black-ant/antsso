@@ -1,4 +1,4 @@
-package com.gang.antsso.core.service;
+package com.gang.antsso.handle.service;
 
 import com.gang.antsso.datacenter.entity.SsoAppSettingEntity;
 import com.gang.antsso.datacenter.repository.SsoAppSettingRepository;

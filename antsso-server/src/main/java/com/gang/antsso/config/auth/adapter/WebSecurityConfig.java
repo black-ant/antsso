@@ -1,8 +1,9 @@
 package com.gang.antsso.config.auth.adapter;
 
 import com.gang.antsso.config.entity.AntSSOWebSecurityConfiguration;
-import com.gang.antsso.core.logic.auth.manager.OAuthFailureService;
-import com.gang.antsso.core.logic.auth.manager.OAuthSuccessService;
+import com.gang.antsso.handle.SsoFailureService;
+import com.gang.antsso.handle.SsoLogoutService;
+import com.gang.antsso.handle.SsoSuccessService;
 import com.gang.common.lib.utils.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +15,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.util.CollectionUtils;
@@ -31,10 +31,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    private OAuthFailureService oAuthFailureService;
+    private SsoFailureService oAuthFailureService;
 
     @Autowired
-    private OAuthSuccessService oAuthSuccessService;
+    private SsoSuccessService oAuthSuccessService;
+
+    @Autowired
+    private SsoLogoutService logoutService;
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -67,7 +70,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         //其中：antMatchers--使用ant风格的路径匹配
         //regexMatchers--使用正则表达式匹配
         http.authorizeRequests()
-                .antMatchers("/").permitAll()
                 .regexMatchers(".*before.*").permitAll()
                 .regexMatchers(".*login.*").permitAll()
                 .regexMatchers(".*swagger.*").permitAll()
@@ -84,8 +86,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .defaultSuccessUrl("/index")
                 .loginPage("/login").permitAll()
                 .and()
-                .logout()                                           //默认的"/logout", 允许访问
-                .permitAll();
+                //默认的"/logout", 允许访问
+                .logout()
+                .logoutUrl("/logout").logoutSuccessHandler(logoutService)
+                .logoutSuccessUrl("/").invalidateHttpSession(true);
 
     }
 

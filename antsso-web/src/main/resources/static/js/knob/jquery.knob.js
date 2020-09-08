@@ -18,7 +18,7 @@
     "use strict";
 
     /**
-     * Definition of globals and core
+     * Definition of globals and handle
      */
     var k = {}, // kontrol
         max = Math.max,

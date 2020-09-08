@@ -61,8 +61,8 @@ public class SAMLMessageHandler {
         this.resolver = securityPolicyResolver;
         this.idpConfiguration = idpConfiguration;
         this.validatorSuites = asList(
-                getValidatorSuite("saml2-core-schema-validator"),
-                getValidatorSuite("saml2-core-spec-validator"));
+                getValidatorSuite("saml2-handle-schema-validator"),
+                getValidatorSuite("saml2-handle-spec-validator"));
         this.proxiedSAMLContextProviderLB = new ProxiedSAMLContextProviderLB(new URI(idpBaseUrl));
     }
 

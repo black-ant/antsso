@@ -1,4 +1,4 @@
-package com.gang.antsso.core.logic.auth.manager;
+package com.gang.antsso.handle;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Created by zengzg
  */
 @Component
-public class OAuthSuccessService extends SavedRequestAwareAuthenticationSuccessHandler {
+public class SsoSuccessService extends SavedRequestAwareAuthenticationSuccessHandler {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 

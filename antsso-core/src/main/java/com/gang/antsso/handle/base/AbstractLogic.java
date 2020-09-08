@@ -1,4 +1,4 @@
-package com.gang.antsso.core.base;
+package com.gang.antsso.handle.base;
 
 import com.gang.antsso.datacenter.entity.AbstractAntSsoEntity;
 import com.gang.antsso.to.BaseAntSsoTO;

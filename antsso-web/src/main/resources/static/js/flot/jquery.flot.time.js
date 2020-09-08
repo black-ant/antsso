@@ -158,7 +158,7 @@ API.txt for details.
 			return makeUtcWrapper(new Date(ts));
 		}
 	}
-	
+
 	// map of app. size of time units in milliseconds
 
 	var timeUnitSize = {
@@ -176,9 +176,9 @@ API.txt for details.
 
 	var baseSpec = [
 		[1, "second"], [2, "second"], [5, "second"], [10, "second"],
-		[30, "second"], 
+		[30, "second"],
 		[1, "minute"], [2, "minute"], [5, "minute"], [10, "minute"],
-		[30, "minute"], 
+		[30, "minute"],
 		[1, "hour"], [2, "hour"], [4, "hour"],
 		[8, "hour"], [12, "hour"],
 		[1, "day"], [2, "day"], [3, "day"],
@@ -422,7 +422,7 @@ API.txt for details.
 		version: '1.0'
 	});
 
-	// Time-axis support used to be in Flot core, which exposed the
+	// Time-axis support used to be in Flot handle, which exposed the
 	// formatDate function on the plot object.  Various plugins depend
 	// on the function, so we need to re-expose it here.
 

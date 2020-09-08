@@ -919,7 +919,7 @@
 
         }
         else if ( defaults.jspdf.autotable === false ) {
-          // pdf output using jsPDF's core html support
+          // pdf output using jsPDF's handle html support
 
           var addHtmlOptions = {
             dim:       {

@@ -17,20 +17,20 @@
         <!--        <module>ext-weibo</module>-->
         <!--        <module>oauth-opt</module>-->
         <!--        <module>oauth-face</module>-->
-
+        <module>antsso-support-rest</module>
         <module>antsso-support-memory</module>
-        <module>antsso-support-database</module>
+        <module>antsso-support-base</module>
         <module>antsso-support-vcode</module>
         <module>antsso-support-dingtalk</module>
         <module>antsso-support-wechat</module>
         <!--        <module>antsso-support-saml-api</module>-->
         <!--        <module>antsso-support-saml-idp</module>-->
         <!--        <module>antsso-support-saml-sp</module>-->
-        <module>antsso-support-ltpa</module>
+        <!--        <module>antsso-support-ltpa</module>-->
         <module>antsso-support-ldap</module>
         <module>antsso-support-voice</module>
         <module>antsso-support-face</module>
-        <module>antsso-support-cas</module>
+        <!--        <module>antsso-support-cas</module>-->
         <module>antsso-support-weibo</module>
         <module>antsso-support-otp</module>
 

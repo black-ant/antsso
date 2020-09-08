@@ -1,4 +1,4 @@
-package com.gang.antsso.core.logic.auth.manager;
+package com.gang.antsso.handle;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +18,7 @@ import java.io.IOException;
  * @Created by zengzg
  */
 @Component
-public class OAuthFailureService implements AuthenticationFailureHandler {
+public class SsoFailureService implements AuthenticationFailureHandler {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
