@@ -17,6 +17,7 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.util.CollectionUtils;
 
 /**
@@ -76,20 +77,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .regexMatchers(".*docs.*").permitAll()
                 .regexMatchers(".*sign.*").permitAll()
                 .regexMatchers(".*unauth.*").permitAll()
-                .antMatchers("/admin").hasRole("ADMIN")
                 .antMatchers("/admin2").hasAnyRole("ADMIN", "USER")
                 .anyRequest().authenticated()                      //其它请求都需要校验才能访问
                 .and()
+                // ----> do Login
                 .formLogin()
+                .loginPage("/login").permitAll()
                 .failureHandler(oAuthFailureService)
                 .successHandler(oAuthSuccessService)
                 .defaultSuccessUrl("/index")
-                .loginPage("/login").permitAll()
                 .and()
+                // ----> do Logout
                 //默认的"/logout", 允许访问
                 .logout()
                 .logoutUrl("/logout").logoutSuccessHandler(logoutService)
-                .logoutSuccessUrl("/").invalidateHttpSession(true);
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
+                .deleteCookies("JSESSIONID")
+                .invalidateHttpSession(true)
+                .logoutSuccessUrl("/login ").invalidateHttpSession(true);
 
     }
 

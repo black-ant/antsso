@@ -25,6 +25,5 @@ public class SsoLogoutService implements LogoutSuccessHandler {
     @Override
     public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
         logger.info("------> this is logout <-------");
-
     }
 }
