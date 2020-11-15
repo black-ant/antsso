@@ -18,6 +18,8 @@
 
     <modules>
         <module>antsso-api</module>
+        <module>antsso-protocal</module>
+        <module>antsso-plugin</module>
         <module>antsso-support</module>
         <module>antsso-server</module>
         <module>antsso-datacenter</module>
@@ -25,8 +27,6 @@
         <module>antsso-common</module>
         <module>antsso-core</module>
         <module>antsso-web</module>
-        <module>antsso-plugin</module>
-        <module>antsso-protocal</module>
     </modules>
 
 
