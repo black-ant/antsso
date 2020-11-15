@@ -3,25 +3,29 @@ server:
   servlet:
     context-path: /sso
 gang:
+  database:
+    url: 127.0.0.1
+    username: root
+    password: 123456
   common:
     swagger:
       basePackage: "com.gang"
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://127.0.0.1:3306/antsso?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://${gang.database.url}:3306/antsso?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
     driver-class-name: com.mysql.jdbc.Driver
-    username: root
+    username: ${gang.database.username}
     continue-on-error: true
     sql-script-encoding: UTF-8
-    password: 123456
-    data-username: root
+    password: ${gang.database.password}
+    data-username: ${gang.database.username}
     hikari:
       maximum-pool-size: 15
       minimum-idle: 5
-      jdbc-url: jdbc:mysql://127.0.0.1:3306/antsso?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
-      username: root
-      password: 123456
+      jdbc-url: ${spring.datasource.url}
+      username: ${spring.datasource.username}
+      password: ${spring.datasource.password}
       allow-pool-suspension: true
       auto-commit: true
       idle-timeout: 300000
@@ -54,6 +58,7 @@ ant:
         - filter: com.gang.antsso.wechat.filter.WechatAuthenticationFilter
           provider: com.gang.antsso.wechat.provider.WechatAuthenticationProvider
           token: com.gang.antsso.wechat.token.WehatUserToken
+      open-auth:
     view:
       viewMap:
         login: login
