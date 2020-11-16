@@ -59,11 +59,13 @@ public class DatabaseAuthenticationProvider implements AuthenticationProvider {
             logger.error("E----> error :{} --user not fount ", username);
             throw new BadCredentialsException("用户不存在");
         }
+        String encodePwd = "";
         if (password.length() != 32) {
-            password = PwdUtils.AESencode(password, AlgorithmConfig.getAlgorithmKey());
+            encodePwd = PwdUtils.AESencode(password, AlgorithmConfig.getAlgorithmKey());
+            logger.info("------> {} encode password is :{} <-------", password, encodePwd);
         }
 
-        if (!password.equals(user.getPassword())) {
+        if (!encodePwd.equals(user.getPassword())) {
             logger.error("E----> user check error");
             throw new BadCredentialsException("用户名或密码不正确");
         } else {
