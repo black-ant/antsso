@@ -54,7 +54,9 @@ public class DatabaseAuthenticationProvider implements AuthenticationProvider {
         }
 
         UserInfo user = userInfoService.searchUserInfo(new UserInfoSearchTO<String>(username));
+        logger.info("------> this is [{}] user  :{}<-------", username, String.valueOf(user));
         if (null == user) {
+            logger.error("E----> error :{} --user not fount ", username);
             throw new BadCredentialsException("用户不存在");
         }
         if (password.length() != 32) {
@@ -62,7 +64,10 @@ public class DatabaseAuthenticationProvider implements AuthenticationProvider {
         }
 
         if (!password.equals(user.getPassword())) {
+            logger.error("E----> user check error");
             throw new BadCredentialsException("用户名或密码不正确");
+        } else {
+            logger.info("user check success");
         }
 
         DatabaseUserToken result = new DatabaseUserToken(
