@@ -10,7 +10,14 @@ gang:
   common:
     swagger:
       basePackage: "com.gang"
+
 spring:
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://${gang.database.url}:3306/antsso?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
